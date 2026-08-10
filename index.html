@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bodenzeit – Gegen Rückenschmerzen im Sitzen</title>
+<meta name="description" content="Bodenzeit ist eine kostenlose PWA für getakteten Wechsel zwischen Sitz-, Boden- und Stehpositionen im Büro und im Auto — mit freier Haltungs-Datenbank, Timer und Erinnerungen gegen Rückenschmerzen vom Dauersitzen." />
+<meta property="og:title" content="Bodenzeit – Gegen Rückenschmerzen im Sitzen" />
+<meta property="og:description" content="Getakteter Wechsel zwischen Sitz-, Boden- und Stehpositionen: kostenlose PWA mit freier Haltungs-Datenbank, Timer und Erinnerungen." />
+<meta property="og:type" content="website" />
+<meta name="theme-color" content="#2f6e5c" />
+<link rel="icon" href="icon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="/">
+    <span class="logo-mark" aria-hidden="true">🧘</span>
+    <span>Bodenzeit</span>
+  </a>
+  <nav class="site-nav" aria-label="Seitennavigation">
+    <a href="#hintergrund">Hintergrund</a>
+    <a href="#funktionen">Funktionen</a>
+    <a href="https://app.postureshift.info/" class="btn btn-primary">App starten</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">Kostenlose Web-App · funktioniert offline</p>
+    <h1>Dein Rücken hält nicht still — warum solltest du es tun?</h1>
+    <p class="hero-lede">
+      Bodenzeit taktet den Wechsel zwischen Boden-, Sitz- und Stehpositionen im Büro und im
+      Auto — mit einstellbaren Zeiten, einer frei erweiterbaren Haltungs-Datenbank und
+      sanften Erinnerungen, auch für die kurze Gehrunde zwischendurch.
+    </p>
+    <div class="hero-actions">
+      <a href="https://app.postureshift.info/" class="btn btn-primary">Jetzt kostenlos starten</a>
+      <a href="#hintergrund" class="btn btn-ghost">Warum das hilft</a>
+    </div>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <svg viewBox="0 0 420 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Drei Silhouetten in unterschiedlichen Sitz- und Stehpositionen, verbunden durch einen kreisförmigen Pfeil">
+      <defs>
+        <style>
+          .bz-fig { fill: #2f6e5c; }
+          .bz-fig-light { fill: #7fb6a4; }
+        </style>
+      </defs>
+      <path d="M60,290 A150,120 0 1 1 360,290" fill="none" stroke="#a9cfc0" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round" />
+      <path d="M348,268 l16,20 l-24,6 z" fill="#a9cfc0" />
+
+      <!-- Boden: Schneidersitz -->
+      <g transform="translate(70,220)">
+        <circle cx="0" cy="-64" r="16" class="bz-fig" />
+        <path d="M-30,10 C-30,-30 30,-30 30,10 L30,26 C10,40 -10,40 -30,26 Z" class="bz-fig-light" />
+        <path d="M-30,20 L-46,34 M30,20 L46,34" stroke="#2f6e5c" stroke-width="8" stroke-linecap="round" fill="none" />
+      </g>
+
+      <!-- Stuhl: aufrecht -->
+      <g transform="translate(210,205)">
+        <circle cx="0" cy="-78" r="16" class="bz-fig" />
+        <rect x="-16" y="-58" width="32" height="46" rx="10" class="bz-fig-light" />
+        <path d="M-16,-30 L-30,10 M16,-30 L30,10" stroke="#2f6e5c" stroke-width="8" stroke-linecap="round" fill="none" />
+        <rect x="-34" y="10" width="68" height="8" rx="4" fill="#c7ddd3" />
+        <rect x="-30" y="18" width="8" height="26" fill="#c7ddd3" />
+        <rect x="22" y="18" width="8" height="26" fill="#c7ddd3" />
+      </g>
+
+      <!-- Stehen -->
+      <g transform="translate(350,196)">
+        <circle cx="0" cy="-92" r="16" class="bz-fig" />
+        <rect x="-15" y="-72" width="30" height="50" rx="10" class="bz-fig-light" />
+        <path d="M-8,-22 L-12,40 M8,-22 L12,40" stroke="#2f6e5c" stroke-width="9" stroke-linecap="round" fill="none" />
+      </g>
+    </svg>
+  </div>
+</section>
+
+<section class="section section-tint" id="hintergrund">
+  <div class="section-inner">
+    <p class="eyebrow">Der Hintergrund</p>
+    <h2>Nicht das Sitzen ist das Problem — sondern das Stillhalten</h2>
+    <p class="lead">
+      "Sitting is the new smoking" ist zu einer geflügelten Warnung geworden: stundenlanges,
+      ununterbrochenes Sitzen wird mit Rückenschmerzen und Stoffwechselrisiken in Verbindung
+      gebracht. Die Forschung dazu ist allerdings differenzierter, als der Slogan vermuten lässt.
+    </p>
+
+    <h3>Was die Hadza uns zeigen</h3>
+    <p>
+      Eine vielzitierte Studie von Raichlen, Pontzer und Kollegen (PNAS, 2020) hat die Hadza,
+      eine Jäger-und-Sammler-Gemeinschaft in Tansania, mit Bewegungssensoren untersucht — und
+      eine überraschende Erkenntnis geliefert: Die Hadza sitzen bzw. ruhen insgesamt fast
+      genauso lange wie Menschen in Industrienationen. Der Unterschied liegt nicht in der
+      Dauer, sondern in der Haltung. Ruhepositionen wie tiefes Hocken oder Knien halten die
+      Bein- und Rumpfmuskulatur spürbar aktiver als das Sitzen auf einem Stuhl. Die Autoren
+      nennen das die <em>„Inactivity Mismatch Hypothesis"</em>: Unser Körper ist evolutionär an
+      unterschiedlich aktive Ruhehaltungen angepasst — nicht an stundenlanges, reglos gleiches
+      Sitzen in ein und derselben Position.
+    </p>
+    <p>
+      Dieses Muster findet sich in ähnlicher Form in vielen traditionellen Sitzgewohnheiten
+      weltweit: Hocken, Kniesitz, Schneidersitz und weitere Bodenhaltungen sind über
+      Kulturen hinweg verbreitet — im Gegensatz zur vergleichsweise jungen, sehr einseitigen
+      Stuhlhaltung, die in vielen Büros den ganzen Tag dominiert.
+    </p>
+
+    <h3>Zur Einordnung: keine Panik vor dem Stuhl</h3>
+    <p>
+      Der Evolutionsbiologe Daniel Lieberman (Harvard), der sich in seinem Buch
+      <em>„Exercised"</em> ausführlich mit genau dieser Forschung auseinandersetzt, warnt
+      zugleich vor Übertreibung: Sitzen selbst ist eine normale, seit jeher übliche
+      menschliche Verhaltensweise und nicht per se schädlich. Problematisch wird es vor allem
+      dann, wenn eine einzelne Position über sehr lange Zeiträume ohne Unterbrechung
+      eingenommen wird.
+    </p>
+    <blockquote class="pull-quote">
+      Entspann dich ein bisschen beim Thema Sitzen. Ja, es ist gut, nicht den ganzen Tag zu
+      sitzen. Es ist gut, sich zu bewegen — aber wir sollten den Menschen keine Angst machen
+      vor etwas so Natürlichem und Normalem wie Sitzen.
+      <cite>— sinngemäß nach Daniel Lieberman, „Exercised" (2021)</cite>
+    </blockquote>
+    <p>
+      Genau diese Balance ist die Idee hinter Bodenzeit: nicht das Sitzen verteufeln, sondern
+      regelmäßig zwischen unterschiedlich aktiven Haltungen wechseln — Boden, Stuhl, Stehen
+      und weitere Varianten, in einem für dich passenden Rhythmus.
+    </p>
+
+    <div class="source-list">
+      <p><strong>Quellen</strong></p>
+      <p>Raichlen DA, Pontzer H, et al. (2020): „Sitting, squatting, and the evolutionary biology of human inactivity." PNAS 117(13). <a href="https://www.pnas.org/doi/10.1073/pnas.1911868117" target="_blank" rel="noopener noreferrer">pnas.org/doi/10.1073/pnas.1911868117</a></p>
+      <p>Lieberman DE (2021): „Exercised: The Science of Physical Activity, Rest and Health." Pantheon Books.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="funktionen">
+  <div class="section-inner section-inner-wide">
+    <p class="eyebrow">So hilft Bodenzeit</p>
+    <h2>Eine getaktete Rotation statt starrer Regeln</h2>
+    <p class="lead">
+      Bodenzeit stellt dir eine frei erweiterbare Haltungs-Datenbank bereit und lässt dich
+      daraus deine eigene Rotation zusammenstellen — getrennt für Büro und Auto, mit eigenem
+      Timer und eigenen Einstellungen.
+    </p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🗂️</div>
+        <h3>Haltungs-Datenbank</h3>
+        <p>Boden, Stuhl, Barhocker, aktive Sitzgelegenheiten, Stehen, Auto — vorbefüllt und frei um eigene Haltungen erweiterbar.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⏱️</div>
+        <h3>Zwei Timer-Ebenen</h3>
+        <p>Ein Positions-Timer für den Haltungswechsel, ein Gehrunden-Timer für die kurze Runde zwischendurch — beide unabhängig einstellbar.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔔</div>
+        <h3>Ton, Sprache, Push</h3>
+        <p>Drei Benachrichtigungskanäle, jeder einzeln an- und abschaltbar — inklusive Action-Buttons direkt in der Push-Benachrichtigung.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🚗</div>
+        <h3>Büro und Auto getrennt</h3>
+        <p>Zwei unabhängige Rotationen mit eigenem Timer, eigenen Einstellungen und eigenem Onboarding-Fragebogen.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📴</div>
+        <h3>Offline-fähig</h3>
+        <p>Bodenzeit funktioniert vollständig lokal auf deinem Gerät — ganz ohne Konto nutzbar.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔄</div>
+        <h3>Optionaler Sync</h3>
+        <p>Mit kostenlosem Konto (Login per Magic Link, ohne Passwort) synct deine Rotation geräteübergreifend.</p>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <figure>
+        <img src="screenshots/timer.png" alt="Bodenzeit-Timer mit laufender Rotation aus Schneidersitz, Sattelhocker und neutralem Stand" loading="lazy" />
+        <figcaption>Positions-Timer mit laufender Rotation</figcaption>
+      </figure>
+      <figure>
+        <img src="screenshots/datenbank.png" alt="Haltungs-Datenbank, gruppiert nach Kategorie Boden und Stuhl" loading="lazy" />
+        <figcaption>Frei durchsuchbare Haltungs-Datenbank</figcaption>
+      </figure>
+      <figure>
+        <img src="screenshots/einstellungen.png" alt="Einstellungen mit Positionswechsel-Intervall, Gehrunden-Intervall und Benachrichtigungskanälen" loading="lazy" />
+        <figcaption>Einstellungen je Tab, mit Testen-Buttons</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <h2>Bereit für mehr Bewegung im Alltag?</h2>
+  <p>Bodenzeit ist kostenlos, läuft direkt im Browser und lässt sich als App installieren.</p>
+  <a href="https://app.postureshift.info/" class="btn btn-primary">Jetzt kostenlos starten</a>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="https://app.postureshift.info/">Zur App</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="agb.html">AGB</a>
+    </div>
+    <p class="footer-note">
+      Bodenzeit ist derzeit werbe- und kostenfrei. Falls die App zukünftig durch Werbung oder
+      freiwillige Unterstützungsbeiträge mitfinanziert wird, weisen wir das an dieser Stelle
+      und in der Datenschutzerklärung transparent aus.
+    </p>
+  </div>
+  <p class="footer-copy">© 2026 Daniel Schwarz · Bodenzeit</p>
+</footer>
+
+</body>
+</html>
