@@ -196,11 +196,61 @@
   </div>
 </section>
 
+<!-- Nur sichtbar nach Werbe-Cookie-Einwilligung (BZConsent) — entschieden in
+     js/site.js. Das AdSense-Skript wird erst dann von js/ads.js dynamisch
+     nachgeladen, nie vorab. -->
+<section class="section ad-section" id="adSlotWrapper">
+  <div class="section-inner">
+    <p class="ad-label">Anzeige</p>
+    <div id="adSlotAdsense" class="ad-slot hidden">
+      <ins class="adsbygoogle"
+           style="display:block; text-align:center;"
+           data-ad-layout="in-article"
+           data-ad-format="fluid"
+           data-ad-client="ca-pub-8453553622026562"
+           data-ad-slot="REPLACE_WITH_ADSENSE_SLOT_ID"></ins>
+    </div>
+  </div>
+</section>
+
 <section class="cta-band">
   <h2>Bereit für mehr Bewegung im Alltag?</h2>
   <p>Bodenzeit ist kostenlos, läuft direkt im Browser und lässt sich als App installieren.</p>
   <a href="https://app.postureshift.info/" class="btn btn-primary">Jetzt kostenlos starten</a>
 </section>
+
+<section class="section section-tint">
+  <div class="section-inner support-section">
+    <p class="eyebrow">Unterstützung</p>
+    <h2>Bodenzeit gefällt dir?</h2>
+    <p>
+      Die App ist kostenlos und bleibt es. Wer die Weiterentwicklung trotzdem unterstützen
+      möchte, kann das freiwillig tun — ganz ohne Gegenleistung.
+    </p>
+    <div class="support-actions">
+      <a href="https://paypal.me/DanielSchwarz88" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+        <span aria-hidden="true">💛</span> Spende via PayPal
+      </a>
+      <a href="https://buymeacoffee.com/danielschwarz" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+        <span aria-hidden="true">☕</span> Buy Me a Coffee
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Werbe-Cookie-Consent-Banner: nur sichtbar solange BZConsent.getStatus()
+     null ist. Über den Footer-Link "Cookie-Einstellungen" später erneut
+     aufrufbar. -->
+<div id="consentBanner" class="consent-banner hidden" role="region" aria-label="Cookie-Einstellungen">
+  <p>
+    Wir würden dir gerne Werbung über Google AdSense zeigen — dafür setzen
+    wir Werbe-Cookies. Lehnst du ab, wird keine Werbung angezeigt.
+  </p>
+  <div class="consent-actions">
+    <button id="consentDeclineBtn" type="button" class="btn btn-consent">Ablehnen</button>
+    <button id="consentAcceptBtn" type="button" class="btn btn-consent">Werbe-Cookies akzeptieren</button>
+  </div>
+</div>
 
 <footer class="site-footer">
   <div class="footer-inner">
@@ -209,15 +259,18 @@
       <a href="impressum.html">Impressum</a>
       <a href="datenschutz.html">Datenschutz</a>
       <a href="agb.html">AGB</a>
+      <button type="button" id="btn-cookie-settings" class="footer-link-btn">Cookie-Einstellungen</button>
     </div>
     <p class="footer-note">
-      Bodenzeit ist derzeit werbe- und kostenfrei. Falls die App zukünftig durch Werbung oder
-      freiwillige Unterstützungsbeiträge mitfinanziert wird, weisen wir das an dieser Stelle
-      und in der Datenschutzerklärung transparent aus.
+      Werbung wird nur nach ausdrücklicher Einwilligung über den Cookie-Banner angezeigt.
+      Details dazu in der Datenschutzerklärung.
     </p>
   </div>
   <p class="footer-copy">© 2026 Daniel Schwarz · Bodenzeit</p>
 </footer>
 
+<script src="js/consent.js"></script>
+<script src="js/ads.js"></script>
+<script src="js/site.js"></script>
 </body>
 </html>

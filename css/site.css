@@ -275,6 +275,87 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--color-primary);
 .legal-content a { color: var(--color-primary-dark); }
 .legal-content .back-link { margin-top: 2.5rem; font-size: 0.95rem; }
 
+/* ---------- Werbefläche ---------- */
+.ad-section { padding: 1rem 1.5rem; }
+.ad-label {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  margin: 0 0 0.5rem;
+}
+.ad-slot.hidden { display: none; }
+
+/* ---------- Unterstützung ---------- */
+.support-section { text-align: center; }
+.support-section h2 { text-align: center; }
+.support-section p { max-width: 44ch; margin-left: auto; margin-right: auto; }
+.support-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+.support-actions .btn { text-decoration: none; }
+
+/* ---------- Cookie-Consent-Banner ---------- */
+.consent-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem 1.5rem;
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  box-shadow: 0 -2px 10px rgba(30, 43, 38, 0.1);
+}
+.consent-banner.hidden { display: none; }
+.consent-banner p {
+  flex: 1 1 280px;
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+.consent-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-left: auto;
+}
+/* Beide Buttons bewusst mit identischem visuellem Gewicht — keine Option
+   ist als "bevorzugt" gestaltet, siehe Kommentar in index.html. */
+.btn-consent {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  padding: 0.55rem 1.1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-family: var(--font-body);
+}
+.btn-consent:hover { background: var(--color-surface-tint); }
+
+.footer-link-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer-link-btn:hover { color: var(--color-text); }
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
