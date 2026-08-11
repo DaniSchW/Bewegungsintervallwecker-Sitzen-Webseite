@@ -271,7 +271,26 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--color-primary);
   background: var(--color-surface-tint);
   border-radius: 12px;
   padding: 1.1rem 1.3rem;
+  margin: 0 0 1.5rem;
+}
+
+.legal-note {
+  max-width: var(--content-width);
+  background: var(--color-accent-soft-bg);
+  border-left: 3px solid var(--color-primary-dark);
+  border-radius: 0 12px 12px 0;
+  padding: 1.1rem 1.3rem;
   margin: 0 0 2.5rem;
+}
+.legal-note h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  color: var(--color-primary-dark);
+}
+.legal-note p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--color-text);
 }
 
 /* ---------- Feature grid ---------- */
