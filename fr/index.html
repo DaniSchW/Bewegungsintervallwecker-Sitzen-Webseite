@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PostureShift – Stopper les douleurs de dos en changeant de position</title>
+<meta name="description" content="Les douleurs de dos viennent de l'immobilité, pas de la position assise elle-même. PostureShift est une PWA gratuite pour alterner à intervalles réguliers entre positions assise, au sol et debout, au bureau et en voiture — avec une base de données de postures personnalisable, un minuteur et des rappels." />
+<meta property="og:title" content="PostureShift – Stopper les douleurs de dos en changeant de position" />
+<meta property="og:description" content="Alternance rythmée entre positions assise, au sol et debout : une PWA gratuite avec base de données de postures personnalisable, minuteur et rappels contre les douleurs de dos dues à la position assise prolongée." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://postureshift.info/fr/" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="theme-color" content="#2f6e5c" />
+<link rel="canonical" href="https://postureshift.info/fr/" />
+<link rel="alternate" hreflang="de" href="https://postureshift.info/" />
+<link rel="alternate" hreflang="en" href="https://postureshift.info/en/" />
+<link rel="alternate" hreflang="da" href="https://postureshift.info/da/" />
+<link rel="alternate" hreflang="nl" href="https://postureshift.info/nl/" />
+<link rel="alternate" hreflang="fr" href="https://postureshift.info/fr/" />
+<link rel="alternate" hreflang="pl" href="https://postureshift.info/pl/" />
+<link rel="alternate" hreflang="cs" href="https://postureshift.info/cs/" />
+<link rel="alternate" hreflang="no" href="https://postureshift.info/no/" />
+<link rel="alternate" hreflang="sv" href="https://postureshift.info/sv/" />
+<link rel="alternate" hreflang="x-default" href="https://postureshift.info/" />
+<link rel="icon" href="../icon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="../css/site.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="/fr/">
+    <img class="logo-mark" src="../icon.svg" alt="" aria-hidden="true" width="28" height="28" />
+    <span>PostureShift</span>
+  </a>
+  <nav class="site-nav" aria-label="Navigation du site">
+    <a href="#hintergrund">Contexte</a>
+    <a href="#loesung">Solution</a>
+    <details class="lang-switch">
+      <summary>FR</summary>
+      <ul>
+        <li><a href="/">Deutsch</a></li>
+        <li><a href="/en/">English</a></li>
+        <li><a href="/da/">Dansk</a></li>
+        <li><a href="/nl/">Nederlands</a></li>
+        <li><a href="/fr/" aria-current="page">Français</a></li>
+        <li><a href="/pl/">Polski</a></li>
+        <li><a href="/cs/">Čeština</a></li>
+        <li><a href="/no/">Norsk</a></li>
+        <li><a href="/sv/">Svenska</a></li>
+      </ul>
+    </details>
+    <a href="https://app.postureshift.info/" class="btn btn-primary">Lancer l'app</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow eyebrow-warn">Douleurs de dos au bureau ?</p>
+    <h1>Ton dos ne souffre pas de la position assise. Il souffre de l'immobilité.</h1>
+    <p class="hero-lede">
+      PostureShift rythme l'alternance entre différentes positions assise, au sol
+      et debout, au bureau comme en voiture — avec des durées réglables, une base
+      de données de postures librement extensible et des rappels en douceur. La
+      solution n'est pas une position précise, mais le changement régulier.
+    </p>
+    <div class="hero-actions">
+      <a href="https://app.postureshift.info/" class="btn btn-primary">Démarrer gratuitement</a>
+      <a href="#hintergrund" class="btn btn-ghost">Pourquoi ça aide</a>
+    </div>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <svg viewBox="0 0 480 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Une personne affalée à un bureau, un point rouge de douleur marquant le bas du dos">
+      <defs>
+        <style>
+          .ps-fig { fill: #2f6e5c; }
+          .ps-fig-light { fill: #7fb6a4; }
+          .ps-desk { fill: #c7ddd3; }
+        </style>
+      </defs>
+
+      <!-- Boden / Schatten -->
+      <ellipse cx="230" cy="382" rx="170" ry="14" fill="#e4efe9" />
+
+      <!-- Stuhl -->
+      <rect x="150" y="270" width="14" height="100" rx="6" class="ps-desk" />
+      <rect x="266" y="270" width="14" height="100" rx="6" class="ps-desk" />
+      <rect x="140" y="256" width="150" height="16" rx="8" class="ps-desk" />
+
+      <!-- Schreibtisch -->
+      <rect x="270" y="230" width="150" height="14" rx="6" class="ps-desk" />
+      <rect x="284" y="244" width="10" height="120" fill="#c7ddd3" />
+      <rect x="396" y="244" width="10" height="120" fill="#c7ddd3" />
+
+      <!-- Zusammengesunkene Sitzfigur: gekrümmter Rücken, hängende Schultern -->
+      <g>
+        <circle cx="210" cy="150" r="20" class="ps-fig" />
+        <path d="M186,172 C176,200 178,230 200,254 C215,270 235,272 258,262 L262,244 C242,250 224,246 214,232 C204,218 206,196 218,178 Z" class="ps-fig-light" />
+        <path d="M258,262 L296,236" stroke="#7fb6a4" stroke-width="12" stroke-linecap="round" />
+        <path d="M200,254 L188,300 M232,258 L246,306" stroke="#2f6e5c" stroke-width="10" stroke-linecap="round" fill="none" />
+      </g>
+
+      <!-- Schmerzpunkt am unteren Rücken -->
+      <g>
+        <circle cx="214" cy="222" r="9" fill="#c1554a" opacity="0.9" />
+        <path d="M214,222 L214,200 M214,222 L192,214 M214,222 L192,232 M214,222 L236,206 M214,222 L238,232"
+              stroke="#c1554a" stroke-width="3" stroke-linecap="round" opacity="0.55" />
+      </g>
+    </svg>
+  </div>
+</section>
+
+<section class="section section-tint" id="hintergrund">
+  <div class="section-inner">
+    <p class="eyebrow">Le contexte</p>
+    <h2>Ce que l'on sait sur la position assise, la douleur et le mouvement</h2>
+    <p class="lead">
+      « Sitting is the new smoking » est devenue une mise en garde bien connue —
+      et il y a effectivement des recherches sérieuses derrière cette phrase. Mais
+      un regard sur les principales sources montre aussi : il ne s'agit pas de
+      bannir la position assise, mais de savoir comment nous sommes assis et à
+      quelle fréquence nous changeons de position.
+    </p>
+
+    <h3>« Sitting is the new smoking »</h3>
+    <p>
+      Cette formule a été popularisée par le chercheur de la Mayo Clinic, le
+      Dr James Levine. Une étude du Pennington Biomedical Research Center,
+      portant sur les données de plus de 17 000 Canadiennes et Canadiens, en a
+      fourni un fondement important : elle a mis en évidence un lien entre de
+      longues périodes assises ininterrompues au quotidien et un risque de
+      mortalité accru — indépendamment du niveau d'activité sportive des
+      personnes pendant leur temps libre. Les interruptions régulières de la
+      position assise semblent donc avoir un effet propre, que le seul sport
+      pratiqué pendant les loisirs ne suffit pas à compenser.
+    </p>
+
+    <h3>Ce que les Hadza nous montrent</h3>
+    <p>
+      Une étude très citée de Raichlen, Pontzer et collègues (PNAS, 2020) a
+      étudié les Hadza, une communauté de chasseurs-cueilleurs de Tanzanie, à
+      l'aide de capteurs de mouvement — avec une découverte surprenante à la
+      clé : les Hadza restent assis ou au repos au total presque aussi
+      longtemps que les habitants des pays industrialisés. La différence ne
+      réside pas dans la durée, mais dans la posture. Des positions de repos
+      comme l'accroupissement profond ou l'agenouillement maintiennent la
+      musculature des jambes et du tronc nettement plus active que la position
+      assise sur une chaise. Les auteurs appellent cela l'<em>« Inactivity
+      Mismatch Hypothesis »</em> : notre corps est adapté, sur le plan
+      évolutif, à des postures de repos diversement actives — pas à rester
+      assis des heures durant, immobile, dans une seule et même position.
+    </p>
+
+    <h3>Plus de 100 positions assises dans le monde</h3>
+    <p>
+      L'anthropologie culturelle montre elle aussi que la chaise n'est qu'une
+      solution parmi bien d'autres. Dans son étude très citée sur la répartition
+      mondiale des postures de repos, l'anthropologue Gordon W. Hewes a
+      répertorié plus de 100 positions assises et de repos habituelles
+      différentes, issues de cultures du monde entier — de l'accroupissement
+      profond pratiqué par de nombreuses ethnies africaines et asiatiques
+      jusqu'aux formes particulières de position agenouillée des Aïnous au
+      Japon, en passant par les habitudes assises de peuples nord-américains
+      comme les Kaskas au Canada. La chaise de bureau telle que nous la
+      connaissons est, en comparaison, une invention récente et relativement
+      unilatérale.
+    </p>
+
+    <h3>Pour remettre les choses en perspective : pas de panique face à la chaise</h3>
+    <p>
+      Le biologiste de l'évolution Daniel Lieberman (Harvard), qui se penche en
+      détail sur ces mêmes recherches dans son livre <em>« Exercised »</em>,
+      met cependant en garde contre l'excès d'inquiétude : la position assise en
+      elle-même est un comportement humain normal, pratiqué depuis toujours, et
+      n'est pas nuisible en soi. Le problème survient surtout lorsqu'une seule
+      et même position est maintenue sans interruption pendant de très longues
+      périodes.
+    </p>
+    <blockquote class="pull-quote">
+      Détends-toi un peu au sujet de la position assise. Oui, c'est bien de ne
+      pas rester assis toute la journée. C'est bien de bouger — mais nous ne
+      devrions pas effrayer les gens à propos de quelque chose d'aussi naturel
+      et normal que la position assise.
+      <cite>— d'après Daniel Lieberman, « Exercised » (2021)</cite>
+    </blockquote>
+    <p>
+      C'est exactement cet équilibre qui est à l'origine de PostureShift : ne
+      pas imposer une seule posture « correcte », mais alterner régulièrement
+      entre des positions plus ou moins actives — selon le rythme et les
+      positions qui conviennent à ton quotidien.
+    </p>
+
+    <div class="source-list">
+      <p><strong>Sources</strong></p>
+      <p>Katzmarzyk PT, Church TS, Craig CL, Bouchard C (2009): „Sitting Time and Mortality from All Causes, Cardiovascular Disease, and Cancer." Medicine &amp; Science in Sports &amp; Exercise 41(5). Pennington Biomedical Research Center, Auswertung der Canada Fitness Survey (n ≈ 17.000).</p>
+      <p>Raichlen DA, Pontzer H, et al. (2020): „Sitting, squatting, and the evolutionary biology of human inactivity." PNAS 117(13). <a href="https://www.pnas.org/doi/10.1073/pnas.1911868117" target="_blank" rel="noopener noreferrer">pnas.org/doi/10.1073/pnas.1911868117</a></p>
+      <p>Hewes GW (1955): „World Distribution of Certain Postural Habits." American Anthropologist 57(2).</p>
+      <p>Lieberman DE (2021): „Exercised: The Science of Physical Activity, Rest and Health." Pantheon Books.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="loesung">
+  <div class="section-inner section-inner-wide">
+    <p class="eyebrow">La solution</p>
+    <h2>Un changement régulier — sous quelque forme que ce soit</h2>
+    <p class="lead">
+      L'essentiel n'est pas une posture précise, mais l'alternance rythmée
+      entre plusieurs postures. PostureShift te met à disposition une base de
+      données de postures librement extensible et te permet d'y composer ta
+      propre rotation — adaptée à ta situation de bureau concrète.
+    </p>
+
+    <div class="posture-grid">
+      <div class="posture-card posture-card-highlight">
+        <span class="posture-badge">Particulièrement efficace</span>
+        <h3>Sol</h3>
+        <p>La position en tailleur, à genoux assis sur les talons et d'autres postures au sol activent le plus fortement la musculature des jambes et du tronc — la posture qui obtient les meilleurs résultats dans la recherche.</p>
+      </div>
+      <div class="posture-card">
+        <h3>Chaise</h3>
+        <p>S'asseoir tout à fait normalement reste une composante de la rotation — l'essentiel est que ce ne soit pas la seule position pendant des heures.</p>
+      </div>
+      <div class="posture-card">
+        <h3>Tabourets de bar &amp; sièges actifs</h3>
+        <p>Tabourets-selles, sièges oscillants et autres assises actives sollicitent la musculature du tronc même en position assise.</p>
+      </div>
+      <div class="posture-card">
+        <h3>Debout</h3>
+        <p>Au pupitre debout ou pour une courte marche entre deux tâches — sans qu'un bureau assis-debout soit nécessaire.</p>
+      </div>
+    </div>
+
+    <p class="posture-note">
+      S'asseoir au sol obtient les meilleurs résultats dans la recherche —
+      c'est pourquoi nous le mettons en avant. Mais tout le monde ne peut pas
+      ou ne veut pas le mettre en pratique au bureau : tenue vestimentaire,
+      manque de place, collègues ou configuration du mobilier posent souvent
+      des limites. PostureShift fonctionne donc tout aussi bien avec une
+      rotation composée uniquement de chaise, tabouret de bar et position
+      debout — c'est le changement lui-même qui est déterminant, pas une
+      posture particulière.
+    </p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🗂️</div>
+        <h3>Base de données de postures</h3>
+        <p>Sol, chaise, tabouret de bar, sièges actifs, debout, voiture — préremplie et librement extensible avec tes propres postures.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⏱️</div>
+        <h3>Deux niveaux de minuteur</h3>
+        <p>Un minuteur de position pour le changement de posture, un minuteur de marche pour une courte pause entre deux — tous deux réglables indépendamment.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔔</div>
+        <h3>Son, voix, push</h3>
+        <p>Trois canaux de notification, chacun activable et désactivable indépendamment — avec des boutons d'action directement dans la notification push.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🚗</div>
+        <h3>Bureau et voiture, séparément</h3>
+        <p>Deux rotations indépendantes, chacune avec son propre minuteur, ses propres réglages et son propre questionnaire d'intégration.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📴</div>
+        <h3>Fonctionne hors ligne</h3>
+        <p>PostureShift fonctionne entièrement en local sur ton appareil — utilisable sans aucun compte.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔄</div>
+        <h3>Synchronisation facultative</h3>
+        <p>Avec un compte gratuit (connexion par lien magique, sans mot de passe), ta rotation se synchronise entre tes appareils.</p>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <figure>
+        <img src="../screenshots/timer.png" alt="Minuteur PostureShift avec une rotation en cours entre position en tailleur, tabouret-selle et position debout neutre" loading="lazy" />
+        <figcaption>Minuteur de position avec rotation en cours</figcaption>
+      </figure>
+      <figure>
+        <img src="../screenshots/datenbank.png" alt="Base de données de postures, regroupée par catégorie sol et chaise" loading="lazy" />
+        <figcaption>Base de données de postures librement consultable</figcaption>
+      </figure>
+      <figure>
+        <img src="../screenshots/einstellungen.png" alt="Réglages avec intervalle de changement de position, intervalle de marche et canaux de notification" loading="lazy" />
+        <figcaption>Réglages par onglet, avec boutons de test</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- Nur sichtbar nach Werbe-Cookie-Einwilligung (PSConsent) — entschieden in
+     js/site.js. Das AdSense-Skript wird erst dann von js/ads.js dynamisch
+     nachgeladen, nie vorab. -->
+<section class="section ad-section" id="adSlotWrapper">
+  <div class="section-inner">
+    <p class="ad-label">Publicité</p>
+    <div id="adSlotAdsense" class="ad-slot hidden">
+      <ins class="adsbygoogle"
+           style="display:block; text-align:center;"
+           data-ad-layout="in-article"
+           data-ad-format="fluid"
+           data-ad-client="ca-pub-8453553622026562"
+           data-ad-slot="REPLACE_WITH_ADSENSE_SLOT_ID"></ins>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <h2>Envie de plus de mouvement au quotidien ?</h2>
+  <p>PostureShift est gratuit, fonctionne directement dans ton navigateur et peut être installé comme une application.</p>
+  <a href="https://app.postureshift.info/" class="btn btn-primary">Démarrer gratuitement</a>
+</section>
+
+<section class="section section-tint">
+  <div class="section-inner support-section">
+    <p class="eyebrow">Soutien</p>
+    <h2>Tu aimes PostureShift ?</h2>
+    <p>
+      L'application est gratuite et le restera. Si tu souhaites malgré tout
+      soutenir son développement, tu peux le faire volontairement — sans
+      aucune contrepartie.
+    </p>
+    <div class="support-actions">
+      <a href="https://paypal.me/DanielSchwarz88" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+        <span aria-hidden="true">💛</span> Faire un don via PayPal
+      </a>
+      <a href="https://buymeacoffee.com/danielschwarz" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+        <span aria-hidden="true">☕</span> Buy Me a Coffee
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Werbe-Cookie-Consent-Banner: nur sichtbar solange PSConsent.getStatus()
+     null ist. Über den Footer-Link "Cookie-Einstellungen" später erneut
+     aufrufbar. -->
+<div id="consentBanner" class="consent-banner hidden" role="region" aria-label="Paramètres des cookies">
+  <p>
+    Nous aimerions t'afficher de la publicité via Google AdSense — cela
+    nécessite de déposer des cookies publicitaires. Si tu refuses, aucune
+    publicité ne sera affichée.
+  </p>
+  <div class="consent-actions">
+    <button id="consentDeclineBtn" type="button" class="btn btn-consent">Refuser</button>
+    <button id="consentAcceptBtn" type="button" class="btn btn-consent">Accepter les cookies publicitaires</button>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="https://app.postureshift.info/">Accéder à l'app</a>
+      <a href="impressum.html">Mentions légales</a>
+      <a href="datenschutz.html">Confidentialité</a>
+      <a href="agb.html">CGU</a>
+      <button type="button" id="btn-cookie-settings" class="footer-link-btn">Paramètres des cookies</button>
+    </div>
+    <p class="footer-note">
+      La publicité n'est affichée qu'après consentement explicite via la
+      bannière de cookies. Plus de détails dans la politique de
+      confidentialité.
+    </p>
+  </div>
+  <p class="footer-copy">© 2026 Daniel Schwarz · PostureShift</p>
+</footer>
+
+<script src="../js/consent.js"></script>
+<script src="../js/ads.js"></script>
+<script src="../js/site.js"></script>
+</body>
+</html>
