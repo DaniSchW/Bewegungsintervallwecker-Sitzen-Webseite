@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PostureShift – Stopp ryggsmerter ved å skifte stilling</title>
+<meta name="description" content="Ryggsmerter kommer av å holde deg i ro, ikke av å sitte i seg selv. PostureShift er en gratis PWA for taktfast veksling mellom sitte-, gulv- og ståstillinger på kontoret og i bilen — med en fri stillingsdatabase, timer og påminnelser." />
+<meta property="og:title" content="PostureShift – Stopp ryggsmerter ved å skifte stilling" />
+<meta property="og:description" content="Taktfast veksling mellom sitte-, gulv- og ståstillinger: gratis PWA med fri stillingsdatabase, timer og påminnelser mot ryggsmerter fra langvarig sitting." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://postureshift.info/no/" />
+<meta property="og:locale" content="nb_NO" />
+<meta name="theme-color" content="#2f6e5c" />
+<link rel="canonical" href="https://postureshift.info/no/" />
+<link rel="alternate" hreflang="de" href="https://postureshift.info/" />
+<link rel="alternate" hreflang="en" href="https://postureshift.info/en/" />
+<link rel="alternate" hreflang="da" href="https://postureshift.info/da/" />
+<link rel="alternate" hreflang="nl" href="https://postureshift.info/nl/" />
+<link rel="alternate" hreflang="fr" href="https://postureshift.info/fr/" />
+<link rel="alternate" hreflang="pl" href="https://postureshift.info/pl/" />
+<link rel="alternate" hreflang="cs" href="https://postureshift.info/cs/" />
+<link rel="alternate" hreflang="no" href="https://postureshift.info/no/" />
+<link rel="alternate" hreflang="sv" href="https://postureshift.info/sv/" />
+<link rel="alternate" hreflang="x-default" href="https://postureshift.info/" />
+<link rel="icon" href="../icon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="../css/site.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="/no/">
+    <img class="logo-mark" src="../icon.svg" alt="" aria-hidden="true" width="28" height="28" />
+    <span>PostureShift</span>
+  </a>
+  <nav class="site-nav" aria-label="Sidenavigasjon">
+    <a href="#hintergrund">Bakgrunn</a>
+    <a href="#loesung">Løsning</a>
+    <details class="lang-switch">
+      <summary>NO</summary>
+      <ul>
+        <li><a href="/">Deutsch</a></li>
+        <li><a href="/en/">English</a></li>
+        <li><a href="/da/">Dansk</a></li>
+        <li><a href="/nl/">Nederlands</a></li>
+        <li><a href="/fr/">Français</a></li>
+        <li><a href="/pl/">Polski</a></li>
+        <li><a href="/cs/">Čeština</a></li>
+        <li><a href="/no/" aria-current="page">Norsk</a></li>
+        <li><a href="/sv/">Svenska</a></li>
+      </ul>
+    </details>
+    <a href="https://app.postureshift.info/" class="btn btn-primary">Start appen</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow eyebrow-warn">Ryggsmerter på kontoret?</p>
+    <h1>Ryggen din gjør ikke vondt av å sitte. Den gjør vondt av å holde seg i ro.</h1>
+    <p class="hero-lede">
+      PostureShift styrer vekslingen mellom ulike sitte-, gulv- og
+      ståstillinger på kontoret og i bilen — med justerbare tider, en fritt
+      utvidbar stillingsdatabase og milde påminnelser. Løsningen er ikke én
+      bestemt stilling, men den jevnlige vekslingen.
+    </p>
+    <div class="hero-actions">
+      <a href="https://app.postureshift.info/" class="btn btn-primary">Start gratis nå</a>
+      <a href="#hintergrund" class="btn btn-ghost">Hvorfor dette hjelper</a>
+    </div>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <svg viewBox="0 0 480 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="En person sitter sammensunket ved skrivebordet, et rødt smertepunkt markerer korsryggen">
+      <defs>
+        <style>
+          .ps-fig { fill: #2f6e5c; }
+          .ps-fig-light { fill: #7fb6a4; }
+          .ps-desk { fill: #c7ddd3; }
+        </style>
+      </defs>
+
+      <!-- Boden / Schatten -->
+      <ellipse cx="230" cy="382" rx="170" ry="14" fill="#e4efe9" />
+
+      <!-- Stuhl -->
+      <rect x="150" y="270" width="14" height="100" rx="6" class="ps-desk" />
+      <rect x="266" y="270" width="14" height="100" rx="6" class="ps-desk" />
+      <rect x="140" y="256" width="150" height="16" rx="8" class="ps-desk" />
+
+      <!-- Schreibtisch -->
+      <rect x="270" y="230" width="150" height="14" rx="6" class="ps-desk" />
+      <rect x="284" y="244" width="10" height="120" fill="#c7ddd3" />
+      <rect x="396" y="244" width="10" height="120" fill="#c7ddd3" />
+
+      <!-- Zusammengesunkene Sitzfigur: gekrümmter Rücken, hängende Schultern -->
+      <g>
+        <circle cx="210" cy="150" r="20" class="ps-fig" />
+        <path d="M186,172 C176,200 178,230 200,254 C215,270 235,272 258,262 L262,244 C242,250 224,246 214,232 C204,218 206,196 218,178 Z" class="ps-fig-light" />
+        <path d="M258,262 L296,236" stroke="#7fb6a4" stroke-width="12" stroke-linecap="round" />
+        <path d="M200,254 L188,300 M232,258 L246,306" stroke="#2f6e5c" stroke-width="10" stroke-linecap="round" fill="none" />
+      </g>
+
+      <!-- Schmerzpunkt am unteren Rücken -->
+      <g>
+        <circle cx="214" cy="222" r="9" fill="#c1554a" opacity="0.9" />
+        <path d="M214,222 L214,200 M214,222 L192,214 M214,222 L192,232 M214,222 L236,206 M214,222 L238,232"
+              stroke="#c1554a" stroke-width="3" stroke-linecap="round" opacity="0.55" />
+      </g>
+    </svg>
+  </div>
+</section>
+
+<section class="section section-tint" id="hintergrund">
+  <div class="section-inner">
+    <p class="eyebrow">Bakgrunnen</p>
+    <h2>Hva vi vet om sitting, smerter og bevegelse</h2>
+    <p class="lead">
+      "Sitting is the new smoking" har blitt et kjent uttrykk — og det ligger
+      faktisk en del forskning bak. Et blikk på de viktigste kildene viser
+      imidlertid også: Det handler ikke om å forby sitting, men om hvordan vi
+      sitter og hvor ofte vi skifter stilling.
+    </p>
+
+    <h3>"Sitting is the new smoking"</h3>
+    <p>
+      Uttrykket ble laget av Mayo Clinic-forskeren Dr. James Levine. Et
+      viktig grunnlag for dette kom fra en studie fra Pennington Biomedical
+      Research Center med data fra over 17 000 kanadiere: Den fant en
+      sammenheng mellom lange, uavbrutte daglige sitteperioder og økt
+      dødsrisiko — uavhengig av hvor fysisk aktive personene ellers var på
+      fritiden. Regelmessige avbrudd i sittingen ser dermed ut til å ha en
+      selvstendig effekt som ikke oppveies av ren mosjon på fritiden alene.
+    </p>
+
+    <h3>Hva Hadza-folket viser oss</h3>
+    <p>
+      En mye sitert studie av Raichlen, Pontzer og kolleger (PNAS, 2020)
+      undersøkte Hadza, et jeger-og-sanker-samfunn i Tanzania, ved hjelp av
+      bevegelsessensorer — og kom med en overraskende erkjennelse: Hadza-folket
+      sitter eller hviler til sammen nesten like lenge som mennesker i
+      industrialiserte land. Forskjellen ligger ikke i varigheten, men i
+      stillingen. Hvilestillinger som dyp hukesitting eller kneling holder
+      ben- og kroppsmuskulaturen merkbart mer aktiv enn det å sitte på en
+      stol. Forfatterne kaller dette <em>"Inactivity Mismatch Hypothesis"</em>:
+      Kroppen vår er evolusjonært tilpasset ulikt aktive hvilestillinger —
+      ikke til å sitte stille i timevis i én og samme stilling.
+    </p>
+
+    <h3>Over 100 sittestillinger verden over</h3>
+    <p>
+      At stolen bare er én av mange løsninger, viser også kulturantropologien.
+      Antropologen Gordon W. Hewes dokumenterte i sin mye siterte studie om
+      den globale utbredelsen av hvilestillinger over 100 ulike vanemessige
+      sitte- og hvilestillinger fra kulturer over hele verden — fra dyp
+      hukesitting hos mange afrikanske og asiatiske folkegrupper til egne
+      knelesittformer, blant annet hos ainuene i Japan, eller sittevaner hos
+      nordamerikanske folkegrupper som kaska-folket i Canada. Kontorstolen
+      slik vi kjenner den, er til sammenligning en ung og forholdsvis ensidig
+      oppfinnelse.
+    </p>
+
+    <h3>Litt perspektiv: ingen grunn til å frykte stolen</h3>
+    <p>
+      Evolusjonsbiologen Daniel Lieberman (Harvard), som i boken
+      <em>"Exercised"</em> går grundig inn på nettopp denne forskningen,
+      advarer samtidig mot å overdrive: Sitting i seg selv er en normal,
+      alltid utbredt menneskelig atferd og ikke skadelig i seg selv. Det blir
+      først problematisk når én enkelt stilling holdes over svært lange
+      perioder uten avbrudd.
+    </p>
+    <blockquote class="pull-quote">
+      Slapp litt av når det gjelder sitting. Ja, det er bra å ikke sitte hele
+      dagen. Det er bra å bevege seg — men vi bør ikke skremme folk med noe så
+      naturlig og normalt som det å sitte.
+      <cite>— fritt etter Daniel Lieberman, "Exercised" (2021)</cite>
+    </blockquote>
+    <p>
+      Nettopp denne balansen er ideen bak PostureShift: ikke foreskrive én
+      bestemt "riktig" stilling, men veksle jevnlig mellom ulikt aktive
+      stillinger — i det tempoet og med de stillingene som passer til din
+      hverdag.
+    </p>
+
+    <div class="source-list">
+      <p><strong>Kilder</strong></p>
+      <p>Katzmarzyk PT, Church TS, Craig CL, Bouchard C (2009): „Sitting Time and Mortality from All Causes, Cardiovascular Disease, and Cancer." Medicine &amp; Science in Sports &amp; Exercise 41(5). Pennington Biomedical Research Center, analyse av Canada Fitness Survey (n ≈ 17 000).</p>
+      <p>Raichlen DA, Pontzer H, et al. (2020): „Sitting, squatting, and the evolutionary biology of human inactivity." PNAS 117(13). <a href="https://www.pnas.org/doi/10.1073/pnas.1911868117" target="_blank" rel="noopener noreferrer">pnas.org/doi/10.1073/pnas.1911868117</a></p>
+      <p>Hewes GW (1955): „World Distribution of Certain Postural Habits." American Anthropologist 57(2).</p>
+      <p>Lieberman DE (2021): „Exercised: The Science of Physical Activity, Rest and Health." Pantheon Books.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="loesung">
+  <div class="section-inner section-inner-wide">
+    <p class="eyebrow">Løsningen</p>
+    <h2>Regelmessig veksling — uansett i hvilken form</h2>
+    <p class="lead">
+      Kjernen er ikke én bestemt stilling, men den taktfaste vekslingen
+      mellom flere. PostureShift gir deg en fritt utvidbar stillingsdatabase
+      og lar deg sette sammen din egen rotasjon ut fra den — tilpasset din
+      konkrete kontorsituasjon.
+    </p>
+
+    <div class="posture-grid">
+      <div class="posture-card posture-card-highlight">
+        <span class="posture-badge">Spesielt effektivt</span>
+        <h3>Gulv</h3>
+        <p>Skredderstilling, sitting på hælene og andre gulvstillinger aktiverer ben- og kroppsmuskulaturen mest — stillingen som kommer best ut i forskningen.</p>
+      </div>
+      <div class="posture-card">
+        <h3>Stol</h3>
+        <p>Helt vanlig sitting forblir en del av rotasjonen — det avgjørende er at det ikke blir den eneste stillingen i timevis.</p>
+      </div>
+      <div class="posture-card">
+        <h3>Barkrakker &amp; aktive sittemøbler</h3>
+        <p>Salstoler, balansestoler og andre aktive sittemøbler holder kroppsmuskulaturen aktiv også når du sitter.</p>
+      </div>
+      <div class="posture-card">
+        <h3>Stående</h3>
+        <p>Ved ståpulten eller på den korte gårunden innimellom — uten at et hevbart skrivebord er nødvendig.</p>
+      </div>
+    </div>
+
+    <p class="posture-note">
+      Gulvsitting kommer best ut i forskningen — derfor fremhever vi det. Men
+      ikke alle kan eller vil gjennomføre dette på kontoret: klær,
+      plassforhold, kolleger eller møbelsituasjonen setter ofte grenser.
+      PostureShift fungerer derfor like godt med en rotasjon utelukkende
+      bestående av stol, barkrakk og stående — selve vekslingen er den
+      avgjørende faktoren, ikke én bestemt stilling.
+    </p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🗂️</div>
+        <h3>Stillingsdatabase</h3>
+        <p>Gulv, stol, barkrakk, aktive sittemøbler, stående, bil — forhåndsutfylt og fritt utvidbar med egne stillinger.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⏱️</div>
+        <h3>To timernivåer</h3>
+        <p>En posisjonstimer for stillingsskifte, en gårundetimer for den korte runden innimellom — begge uavhengig justerbare.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔔</div>
+        <h3>Lyd, tale, push</h3>
+        <p>Tre varslingskanaler, hver enkelt kan slås av og på — inkludert handlingsknapper direkte i push-varselet.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🚗</div>
+        <h3>Kontor og bil hver for seg</h3>
+        <p>To uavhengige rotasjoner med egen timer, egne innstillinger og eget onboarding-spørreskjema.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📴</div>
+        <h3>Fungerer offline</h3>
+        <p>PostureShift fungerer helt lokalt på enheten din — kan brukes helt uten konto.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔄</div>
+        <h3>Valgfri synkronisering</h3>
+        <p>Med gratis konto (innlogging via magisk lenke, uten passord) synkroniseres rotasjonen din på tvers av enheter.</p>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <figure>
+        <img src="../screenshots/timer.png" alt="PostureShift-timer med pågående rotasjon mellom skredderstilling, salstol og nøytral stående stilling" loading="lazy" />
+        <figcaption>Posisjonstimer med pågående rotasjon</figcaption>
+      </figure>
+      <figure>
+        <img src="../screenshots/datenbank.png" alt="Stillingsdatabase, gruppert etter kategoriene gulv og stol" loading="lazy" />
+        <figcaption>Fritt søkbar stillingsdatabase</figcaption>
+      </figure>
+      <figure>
+        <img src="../screenshots/einstellungen.png" alt="Innstillinger med intervall for stillingsskifte, intervall for gårunder og varslingskanaler" loading="lazy" />
+        <figcaption>Innstillinger per fane, med testknapper</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- Nur sichtbar nach Werbe-Cookie-Einwilligung (PSConsent) — entschieden in
+     js/site.js. Das AdSense-Skript wird erst dann von js/ads.js dynamisch
+     nachgeladen, nie vorab. -->
+<section class="section ad-section" id="adSlotWrapper">
+  <div class="section-inner">
+    <p class="ad-label">Annonse</p>
+    <div id="adSlotAdsense" class="ad-slot hidden">
+      <ins class="adsbygoogle"
+           style="display:block; text-align:center;"
+           data-ad-layout="in-article"
+           data-ad-format="fluid"
+           data-ad-client="ca-pub-8453553622026562"
+           data-ad-slot="REPLACE_WITH_ADSENSE_SLOT_ID"></ins>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <h2>Klar for mer bevegelse i hverdagen?</h2>
+  <p>PostureShift er gratis, kjører direkte i nettleseren og kan installeres som app.</p>
+  <a href="https://app.postureshift.info/" class="btn btn-primary">Start gratis nå</a>
+</section>
+
+<section class="section section-tint">
+  <div class="section-inner support-section">
+    <p class="eyebrow">Støtte</p>
+    <h2>Liker du PostureShift?</h2>
+    <p>
+      Appen er gratis og forblir det. Den som likevel ønsker å støtte
+      videreutviklingen, kan gjøre det frivillig — helt uten noen motytelse.
+    </p>
+    <div class="support-actions">
+      <a href="https://paypal.me/DanielSchwarz88" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+        <span aria-hidden="true">💛</span> Doner via PayPal
+      </a>
+      <a href="https://buymeacoffee.com/danielschwarz" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+        <span aria-hidden="true">☕</span> Buy Me a Coffee
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Werbe-Cookie-Consent-Banner: nur sichtbar solange PSConsent.getStatus()
+     null ist. Über den Footer-Link "Cookie-Einstellungen" später erneut
+     aufrufbar. -->
+<div id="consentBanner" class="consent-banner hidden" role="region" aria-label="Cookie-innstillinger">
+  <p>
+    Vi vil gjerne vise deg annonser via Google AdSense — til dette bruker
+    vi annonsecookies. Avslår du, vises ingen annonser.
+  </p>
+  <div class="consent-actions">
+    <button id="consentDeclineBtn" type="button" class="btn btn-consent">Avslå</button>
+    <button id="consentAcceptBtn" type="button" class="btn btn-consent">Godta annonsecookies</button>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="https://app.postureshift.info/">Til appen</a>
+      <a href="impressum.html">Firmaopplysninger</a>
+      <a href="datenschutz.html">Personvern</a>
+      <a href="agb.html">Vilkår</a>
+      <button type="button" id="btn-cookie-settings" class="footer-link-btn">Cookie-innstillinger</button>
+    </div>
+    <p class="footer-note">
+      Annonser vises kun etter uttrykkelig samtykke via cookie-banneret.
+      Se personvernerklæringen for detaljer.
+    </p>
+  </div>
+  <p class="footer-copy">© 2026 Daniel Schwarz · PostureShift</p>
+</footer>
+
+<script src="../js/consent.js"></script>
+<script src="../js/ads.js"></script>
+<script src="../js/site.js"></script>
+</body>
+</html>

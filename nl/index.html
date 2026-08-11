@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PostureShift – Stop rugpijn door van houding te wisselen</title>
+<meta name="description" content="Rugpijn komt van stilzitten, niet van zitten op zich. PostureShift is een gratis PWA voor getimede wisseling tussen zit-, vloer- en statahoudingen op kantoor en in de auto — met een vrij uitbreidbare houdingsdatabase, timer en herinneringen." />
+<meta property="og:title" content="PostureShift – Stop rugpijn door van houding te wisselen" />
+<meta property="og:description" content="Getimede wisseling tussen zit-, vloer- en statahoudingen: een gratis PWA met een vrij uitbreidbare houdingsdatabase, timer en herinneringen tegen rugpijn door langdurig zitten." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://postureshift.info/nl/" />
+<meta property="og:locale" content="nl_NL" />
+<meta name="theme-color" content="#2f6e5c" />
+<link rel="canonical" href="https://postureshift.info/nl/" />
+<link rel="alternate" hreflang="de" href="https://postureshift.info/" />
+<link rel="alternate" hreflang="en" href="https://postureshift.info/en/" />
+<link rel="alternate" hreflang="da" href="https://postureshift.info/da/" />
+<link rel="alternate" hreflang="nl" href="https://postureshift.info/nl/" />
+<link rel="alternate" hreflang="fr" href="https://postureshift.info/fr/" />
+<link rel="alternate" hreflang="pl" href="https://postureshift.info/pl/" />
+<link rel="alternate" hreflang="cs" href="https://postureshift.info/cs/" />
+<link rel="alternate" hreflang="no" href="https://postureshift.info/no/" />
+<link rel="alternate" hreflang="sv" href="https://postureshift.info/sv/" />
+<link rel="alternate" hreflang="x-default" href="https://postureshift.info/" />
+<link rel="icon" href="../icon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="../css/site.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="/nl/">
+    <img class="logo-mark" src="../icon.svg" alt="" aria-hidden="true" width="28" height="28" />
+    <span>PostureShift</span>
+  </a>
+  <nav class="site-nav" aria-label="Paginanavigatie">
+    <a href="#hintergrund">Achtergrond</a>
+    <a href="#loesung">Oplossing</a>
+    <details class="lang-switch">
+      <summary>NL</summary>
+      <ul>
+        <li><a href="/">Deutsch</a></li>
+        <li><a href="/en/">English</a></li>
+        <li><a href="/da/">Dansk</a></li>
+        <li><a href="/nl/" aria-current="page">Nederlands</a></li>
+        <li><a href="/fr/">Français</a></li>
+        <li><a href="/pl/">Polski</a></li>
+        <li><a href="/cs/">Čeština</a></li>
+        <li><a href="/no/">Norsk</a></li>
+        <li><a href="/sv/">Svenska</a></li>
+      </ul>
+    </details>
+    <a href="https://app.postureshift.info/" class="btn btn-primary">Start de app</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow eyebrow-warn">Rugpijn op kantoor?</p>
+    <h1>Je rug doet geen pijn van zitten. Hij doet pijn van stilzitten.</h1>
+    <p class="hero-lede">
+      PostureShift regelt het getimede wisselen tussen verschillende zit-,
+      vloer- en statahoudingen op kantoor en in de auto — met instelbare
+      tijden, een vrij uitbreidbare houdingsdatabase en zachte herinneringen.
+      Niet één bepaalde houding is de oplossing, maar het regelmatige
+      wisselen.
+    </p>
+    <div class="hero-actions">
+      <a href="https://app.postureshift.info/" class="btn btn-primary">Nu gratis starten</a>
+      <a href="#hintergrund" class="btn btn-ghost">Waarom dit helpt</a>
+    </div>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <svg viewBox="0 0 480 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Persoon zit onderuitgezakt aan het bureau, een rode pijnstip markeert de onderrug">
+      <defs>
+        <style>
+          .ps-fig { fill: #2f6e5c; }
+          .ps-fig-light { fill: #7fb6a4; }
+          .ps-desk { fill: #c7ddd3; }
+        </style>
+      </defs>
+
+      <!-- Boden / Schatten -->
+      <ellipse cx="230" cy="382" rx="170" ry="14" fill="#e4efe9" />
+
+      <!-- Stuhl -->
+      <rect x="150" y="270" width="14" height="100" rx="6" class="ps-desk" />
+      <rect x="266" y="270" width="14" height="100" rx="6" class="ps-desk" />
+      <rect x="140" y="256" width="150" height="16" rx="8" class="ps-desk" />
+
+      <!-- Schreibtisch -->
+      <rect x="270" y="230" width="150" height="14" rx="6" class="ps-desk" />
+      <rect x="284" y="244" width="10" height="120" fill="#c7ddd3" />
+      <rect x="396" y="244" width="10" height="120" fill="#c7ddd3" />
+
+      <!-- Zusammengesunkene Sitzfigur: gekrümmter Rücken, hängende Schultern -->
+      <g>
+        <circle cx="210" cy="150" r="20" class="ps-fig" />
+        <path d="M186,172 C176,200 178,230 200,254 C215,270 235,272 258,262 L262,244 C242,250 224,246 214,232 C204,218 206,196 218,178 Z" class="ps-fig-light" />
+        <path d="M258,262 L296,236" stroke="#7fb6a4" stroke-width="12" stroke-linecap="round" />
+        <path d="M200,254 L188,300 M232,258 L246,306" stroke="#2f6e5c" stroke-width="10" stroke-linecap="round" fill="none" />
+      </g>
+
+      <!-- Schmerzpunkt am unteren Rücken -->
+      <g>
+        <circle cx="214" cy="222" r="9" fill="#c1554a" opacity="0.9" />
+        <path d="M214,222 L214,200 M214,222 L192,214 M214,222 L192,232 M214,222 L236,206 M214,222 L238,232"
+              stroke="#c1554a" stroke-width="3" stroke-linecap="round" opacity="0.55" />
+      </g>
+    </svg>
+  </div>
+</section>
+
+<section class="section section-tint" id="hintergrund">
+  <div class="section-inner">
+    <p class="eyebrow">De achtergrond</p>
+    <h2>Wat we weten over zitten, pijn en beweging</h2>
+    <p class="lead">
+      "Sitting is the new smoking" is een gevleugelde waarschuwing geworden
+      — en er zit inderdaad behoorlijk wat onderzoek achter. Een blik op de
+      belangrijkste bronnen laat echter ook zien: het gaat er niet om zitten
+      te verbannen, maar om hoe we zitten en hoe vaak we van houding
+      wisselen.
+    </p>
+
+    <h3>„Sitting is the new smoking"</h3>
+    <p>
+      De uitspraak is bedacht door Mayo Clinic-onderzoeker dr. James Levine.
+      Een belangrijke basis hiervoor leverde een studie van het Pennington
+      Biomedical Research Center met gegevens van meer dan 17.000 Canadezen:
+      die vond een verband tussen lange, ononderbroken dagelijkse zittijden
+      en een verhoogd sterfterisico — ongeacht hoe sportief actief de
+      personen in hun vrije tijd verder waren. Regelmatige onderbrekingen
+      van het zitten lijken dus een zelfstandig effect te hebben, dat puur
+      sporten in de vrije tijd alleen niet compenseert.
+    </p>
+
+    <h3>Wat de Hadza ons laten zien</h3>
+    <p>
+      Een veelgeciteerde studie van Raichlen, Pontzer en collega's (PNAS,
+      2020) onderzocht de Hadza, een jager-verzamelaargemeenschap in
+      Tanzania, met bewegingssensoren — en leverde een verrassend inzicht
+      op: de Hadza zitten of rusten in totaal bijna even lang als mensen in
+      geïndustrialiseerde landen. Het verschil zit niet in de duur, maar in
+      de houding. Rusthoudingen zoals diep hurken of knielen houden de
+      been- en rompspieren merkbaar actiever dan zitten op een stoel. De
+      auteurs noemen dit de <em>„Inactivity Mismatch Hypothesis"</em>: ons
+      lichaam is evolutionair aangepast aan verschillend actieve
+      rusthoudingen — niet aan urenlang, roerloos zitten in een en dezelfde
+      houding.
+    </p>
+
+    <h3>Meer dan 100 zithoudingen wereldwijd</h3>
+    <p>
+      Dat de stoel maar een van de vele oplossingen is, laat ook de
+      culturele antropologie zien. Antropoloog Gordon W. Hewes documenteerde
+      in zijn veelgeciteerde studie naar de wereldwijde verspreiding van
+      rusthoudingen meer dan 100 verschillende gewoontematige zit- en
+      rusthoudingen uit culturen over de hele wereld — van diep hurken bij
+      veel Afrikaanse en Aziatische volkeren tot eigen kniezitvormen zoals
+      bij de Ainu in Japan of zitgewoonten van Noord-Amerikaanse
+      volksgroepen zoals de Kaska in Canada. De bureaustoel zoals wij die
+      kennen, is in vergelijking daarmee een jonge en relatief eenzijdige
+      uitvinding.
+    </p>
+
+    <h3>Ter nuancering: geen paniek voor de stoel</h3>
+    <p>
+      Evolutiebioloog Daniel Lieberman (Harvard), die zich in zijn boek
+      <em>„Exercised"</em> uitgebreid met precies dit onderzoek bezighoudt,
+      waarschuwt tegelijk voor overdrijving: zitten zelf is een normaal,
+      van oudsher gangbaar menselijk gedrag en niet per se schadelijk.
+      Problematisch wordt het vooral wanneer één enkele houding gedurende
+      zeer lange periodes zonder onderbreking wordt aangenomen.
+    </p>
+    <blockquote class="pull-quote">
+      Ontspan je een beetje als het om zitten gaat. Ja, het is goed om niet
+      de hele dag te zitten. Het is goed om te bewegen — maar we moeten
+      mensen geen angst aanjagen voor iets zo natuurlijks en normaals als
+      zitten.
+      <cite>— vrij naar Daniel Lieberman, „Exercised" (2021)</cite>
+    </blockquote>
+    <p>
+      Precies dit evenwicht is het idee achter PostureShift: niet één
+      enkele "juiste" houding voorschrijven, maar regelmatig wisselen
+      tussen verschillend actieve houdingen — in het tempo en met de
+      houdingen die bij jouw dagelijks leven passen.
+    </p>
+
+    <div class="source-list">
+      <p><strong>Bronnen</strong></p>
+      <p>Katzmarzyk PT, Church TS, Craig CL, Bouchard C (2009): „Sitting Time and Mortality from All Causes, Cardiovascular Disease, and Cancer." Medicine &amp; Science in Sports &amp; Exercise 41(5). Pennington Biomedical Research Center, analyse van de Canada Fitness Survey (n ≈ 17.000).</p>
+      <p>Raichlen DA, Pontzer H, et al. (2020): „Sitting, squatting, and the evolutionary biology of human inactivity." PNAS 117(13). <a href="https://www.pnas.org/doi/10.1073/pnas.1911868117" target="_blank" rel="noopener noreferrer">pnas.org/doi/10.1073/pnas.1911868117</a></p>
+      <p>Hewes GW (1955): „World Distribution of Certain Postural Habits." American Anthropologist 57(2).</p>
+      <p>Lieberman DE (2021): „Exercised: The Science of Physical Activity, Rest and Health." Pantheon Books.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="loesung">
+  <div class="section-inner section-inner-wide">
+    <p class="eyebrow">De oplossing</p>
+    <h2>Regelmatig wisselen — in welke vorm dan ook</h2>
+    <p class="lead">
+      De kern is niet één bepaalde houding, maar het getimede wisselen
+      tussen meerdere. PostureShift biedt je een vrij uitbreidbare
+      houdingsdatabase en laat je daaruit je eigen rotatie samenstellen —
+      passend bij jouw concrete kantoorsituatie.
+    </p>
+
+    <div class="posture-grid">
+      <div class="posture-card posture-card-highlight">
+        <span class="posture-badge">Bijzonder effectief</span>
+        <h3>Vloer</h3>
+        <p>Kleermakerszit, hielzit en andere vloerhoudingen activeren de been- en rompspieren het sterkst — de houding die in onderzoek het beste scoort.</p>
+      </div>
+      <div class="posture-card">
+        <h3>Stoel</h3>
+        <p>Heel gewoon zitten blijft onderdeel van de rotatie — beslissend is dat het niet urenlang de enige houding blijft.</p>
+      </div>
+      <div class="posture-card">
+        <h3>Barkruk &amp; actieve zitgelegenheden</h3>
+        <p>Zadelkrukken, wiebelkrukken en ander actief zitmeubilair houden de rompspieren ook tijdens het zitten actief aangesproken.</p>
+      </div>
+      <div class="posture-card">
+        <h3>Staan</h3>
+        <p>Aan een statafel of voor het korte wandelrondje tussendoor — zonder dat een sta-bureau nodig is.</p>
+      </div>
+    </div>
+
+    <p class="posture-note">
+      Op de vloer zitten scoort in onderzoek het beste — daarom lichten we
+      het uit. Maar niet iedereen kan of wil dit op kantoor toepassen:
+      kleding, ruimtegebrek, collega's of de meubelsituatie stellen vaak
+      grenzen. PostureShift werkt daarom net zo goed met een rotatie die
+      uitsluitend uit stoel, barkruk en staan bestaat — het wisselen zelf
+      is de beslissende factor, niet een bepaalde houding.
+    </p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🗂️</div>
+        <h3>Houdingsdatabase</h3>
+        <p>Vloer, stoel, barkruk, actieve zitgelegenheden, staan, auto — vooraf gevuld en vrij uit te breiden met eigen houdingen.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⏱️</div>
+        <h3>Twee timerniveaus</h3>
+        <p>Een positietimer voor de houdingswissel, een wandelrondetimer voor het korte rondje tussendoor — beide onafhankelijk instelbaar.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔔</div>
+        <h3>Geluid, spraak, push</h3>
+        <p>Drie meldingskanalen, elk apart aan- en uit te schakelen — inclusief actieknoppen direct in de pushmelding.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🚗</div>
+        <h3>Kantoor en auto gescheiden</h3>
+        <p>Twee onafhankelijke rotaties met een eigen timer, eigen instellingen en een eigen onboardingvragenlijst.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📴</div>
+        <h3>Offline bruikbaar</h3>
+        <p>PostureShift werkt volledig lokaal op je apparaat — volledig te gebruiken zonder account.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔄</div>
+        <h3>Optionele synchronisatie</h3>
+        <p>Met een gratis account (inloggen via magic link, zonder wachtwoord) synct je rotatie tussen apparaten.</p>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <figure>
+        <img src="../screenshots/timer.png" alt="PostureShift-timer met lopende rotatie van kleermakerszit, zadelkruk en neutraal staan" loading="lazy" />
+        <figcaption>Positietimer met lopende rotatie</figcaption>
+      </figure>
+      <figure>
+        <img src="../screenshots/datenbank.png" alt="Houdingsdatabase, gegroepeerd op categorie vloer en stoel" loading="lazy" />
+        <figcaption>Vrij doorzoekbare houdingsdatabase</figcaption>
+      </figure>
+      <figure>
+        <img src="../screenshots/einstellungen.png" alt="Instellingen met positiewisselinterval, wandelrondeinterval en meldingskanalen" loading="lazy" />
+        <figcaption>Instellingen per tabblad, met testknoppen</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- Nur sichtbar nach Werbe-Cookie-Einwilligung (PSConsent) — entschieden in
+     js/site.js. Das AdSense-Skript wird erst dann von js/ads.js dynamisch
+     nachgeladen, nie vorab. -->
+<section class="section ad-section" id="adSlotWrapper">
+  <div class="section-inner">
+    <p class="ad-label">Advertentie</p>
+    <div id="adSlotAdsense" class="ad-slot hidden">
+      <ins class="adsbygoogle"
+           style="display:block; text-align:center;"
+           data-ad-layout="in-article"
+           data-ad-format="fluid"
+           data-ad-client="ca-pub-8453553622026562"
+           data-ad-slot="REPLACE_WITH_ADSENSE_SLOT_ID"></ins>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <h2>Klaar voor meer beweging in je dagelijks leven?</h2>
+  <p>PostureShift is gratis, werkt direct in de browser en kan als app worden geïnstalleerd.</p>
+  <a href="https://app.postureshift.info/" class="btn btn-primary">Nu gratis starten</a>
+</section>
+
+<section class="section section-tint">
+  <div class="section-inner support-section">
+    <p class="eyebrow">Ondersteuning</p>
+    <h2>Bevalt PostureShift je?</h2>
+    <p>
+      De app is gratis en blijft dat ook. Wie de verdere ontwikkeling toch
+      wil ondersteunen, kan dat vrijwillig doen — helemaal zonder
+      tegenprestatie.
+    </p>
+    <div class="support-actions">
+      <a href="https://paypal.me/DanielSchwarz88" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+        <span aria-hidden="true">💛</span> Doneer via PayPal
+      </a>
+      <a href="https://buymeacoffee.com/danielschwarz" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+        <span aria-hidden="true">☕</span> Buy Me a Coffee
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Werbe-Cookie-Consent-Banner: nur sichtbar solange PSConsent.getStatus()
+     null ist. Über den Footer-Link "Cookie-Einstellungen" später erneut
+     aufrufbar. -->
+<div id="consentBanner" class="consent-banner hidden" role="region" aria-label="Cookie-instellingen">
+  <p>
+    We laten je graag advertenties zien via Google AdSense — daarvoor
+    gebruiken we advertentiecookies. Wijs je dit af, dan wordt geen
+    advertentie getoond.
+  </p>
+  <div class="consent-actions">
+    <button id="consentDeclineBtn" type="button" class="btn btn-consent">Afwijzen</button>
+    <button id="consentAcceptBtn" type="button" class="btn btn-consent">Advertentiecookies accepteren</button>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="https://app.postureshift.info/">Naar de app</a>
+      <a href="impressum.html">Colofon</a>
+      <a href="datenschutz.html">Privacybeleid</a>
+      <a href="agb.html">Voorwaarden</a>
+      <button type="button" id="btn-cookie-settings" class="footer-link-btn">Cookie-instellingen</button>
+    </div>
+    <p class="footer-note">
+      Advertenties worden alleen getoond na uitdrukkelijke toestemming via
+      de cookiebanner. Meer details vind je in het privacybeleid.
+    </p>
+  </div>
+  <p class="footer-copy">© 2026 Daniel Schwarz · PostureShift</p>
+</footer>
+
+<script src="../js/consent.js"></script>
+<script src="../js/ads.js"></script>
+<script src="../js/site.js"></script>
+</body>
+</html>
