@@ -1,7 +1,8 @@
-/* Bodenzeit — Stylesheet für die öffentlichen Seiten (Einführungsseite,
-   Impressum/Datenschutz/AGB). Bewusst getrennt von css/style.css, das nur
-   für die App-Oberfläche selbst gilt. Teilt sich die Markenfarbe mit der
-   App, nutzt aber eine für Lesetext gedachte Typografie. */
+/* PostureShift — Stylesheet für die öffentlichen Seiten (Einführungsseite,
+   Impressum/Datenschutz/AGB), in allen 9 Sprachvarianten. Bewusst getrennt
+   von css/style.css, das nur für die App-Oberfläche selbst gilt. Teilt sich
+   die Markenfarbe mit der App, nutzt aber eine für Lesetext gedachte
+   Typografie. */
 
 :root {
   --color-bg: #f4f7f5;
@@ -13,6 +14,8 @@
   --color-text-muted: #5b6f68;
   --color-border: #dde5e1;
   --color-accent-soft-bg: #e4efe9;
+  --color-warn: #c1554a;
+  --color-warn-soft-bg: #f8e9e7;
 
   --font-display: ui-serif, Georgia, "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif;
   --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -57,11 +60,56 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--color-primary);
   font-weight: 700;
   font-size: 1.15rem;
 }
-.logo-mark { font-size: 1.4rem; }
+.logo-mark { display: block; border-radius: 7px; }
 
 .site-nav { display: flex; align-items: center; gap: 1.25rem; }
 .site-nav a { text-decoration: none; color: var(--color-text-muted); font-size: 0.95rem; }
 .site-nav a:hover { color: var(--color-text); }
+
+/* ---------- Sprachumschalter ---------- */
+/* <details>/<summary> statt JS: funktioniert ohne Skript, ist per Tastatur
+   bedienbar und bleibt so einfach wie die restliche, größtenteils
+   statische Seite. */
+.lang-switch { position: relative; font-size: 0.95rem; }
+.lang-switch summary {
+  cursor: pointer;
+  list-style: none;
+  color: var(--color-text-muted);
+  padding: 0.3rem 0.6rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+}
+.lang-switch summary::-webkit-details-marker { display: none; }
+.lang-switch summary:hover { color: var(--color-text); border-color: var(--color-border-strong, var(--color-border)); }
+.lang-switch summary::after { content: " ▾"; }
+.lang-switch[open] summary::after { content: " ▴"; }
+.lang-switch ul {
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  right: 0;
+  margin: 0;
+  padding: 0.4rem;
+  list-style: none;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(30, 43, 38, 0.14);
+  min-width: 9rem;
+  z-index: 50;
+}
+.lang-switch li { margin: 0; }
+.lang-switch a {
+  display: block;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+.lang-switch a:hover { background: var(--color-surface-tint); color: var(--color-text); }
+.lang-switch a[aria-current="page"] { color: var(--color-primary-dark); font-weight: 700; }
 
 @media (max-width: 560px) {
   .site-header { flex-wrap: wrap; padding: 1rem; }
@@ -108,6 +156,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--color-primary);
   color: var(--color-primary-dark);
   margin: 0 0 0.75rem;
 }
+.eyebrow-warn { color: var(--color-warn); }
 
 .hero h1 {
   font-family: var(--font-display);
@@ -182,6 +231,48 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--color-primary);
   border-top: 1px solid var(--color-border);
 }
 .source-list p { margin: 0 0 0.4rem; }
+
+/* ---------- Positionen im Vergleich ---------- */
+.posture-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+.posture-card {
+  position: relative;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 1.4rem 1.4rem 1.5rem;
+}
+.posture-card h3 { margin: 0 0 0.4rem; font-size: 1.05rem; }
+.posture-card p { margin: 0; font-size: 0.9rem; color: var(--color-text-muted); }
+.posture-card-highlight {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 1px var(--color-primary);
+}
+.posture-badge {
+  display: inline-block;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.28rem 0.6rem;
+  border-radius: 999px;
+  margin-bottom: 0.7rem;
+}
+.posture-note {
+  max-width: var(--content-width);
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  background: var(--color-surface-tint);
+  border-radius: 12px;
+  padding: 1.1rem 1.3rem;
+  margin: 0 0 2.5rem;
+}
 
 /* ---------- Feature grid ---------- */
 .feature-grid {

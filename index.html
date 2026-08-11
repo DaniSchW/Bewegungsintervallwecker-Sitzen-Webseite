@@ -3,12 +3,25 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Bodenzeit – Gegen Rückenschmerzen im Sitzen</title>
-<meta name="description" content="Bodenzeit ist eine kostenlose PWA für getakteten Wechsel zwischen Sitz-, Boden- und Stehpositionen im Büro und im Auto — mit freier Haltungs-Datenbank, Timer und Erinnerungen gegen Rückenschmerzen vom Dauersitzen." />
-<meta property="og:title" content="Bodenzeit – Gegen Rückenschmerzen im Sitzen" />
-<meta property="og:description" content="Getakteter Wechsel zwischen Sitz-, Boden- und Stehpositionen: kostenlose PWA mit freier Haltungs-Datenbank, Timer und Erinnerungen." />
+<title>PostureShift – Rückenschmerzen stoppen durch Positionswechsel</title>
+<meta name="description" content="Rückenschmerzen kommen vom Stillhalten, nicht vom Sitzen allein. PostureShift ist eine kostenlose PWA für getakteten Wechsel zwischen Sitz-, Boden- und Stehpositionen im Büro und im Auto — mit freier Haltungs-Datenbank, Timer und Erinnerungen." />
+<meta property="og:title" content="PostureShift – Rückenschmerzen stoppen durch Positionswechsel" />
+<meta property="og:description" content="Getakteter Wechsel zwischen Sitz-, Boden- und Stehpositionen: kostenlose PWA mit freier Haltungs-Datenbank, Timer und Erinnerungen gegen Rückenschmerzen vom Dauersitzen." />
 <meta property="og:type" content="website" />
+<meta property="og:url" content="https://postureshift.info/" />
+<meta property="og:locale" content="de_DE" />
 <meta name="theme-color" content="#2f6e5c" />
+<link rel="canonical" href="https://postureshift.info/" />
+<link rel="alternate" hreflang="de" href="https://postureshift.info/" />
+<link rel="alternate" hreflang="en" href="https://postureshift.info/en/" />
+<link rel="alternate" hreflang="da" href="https://postureshift.info/da/" />
+<link rel="alternate" hreflang="nl" href="https://postureshift.info/nl/" />
+<link rel="alternate" hreflang="fr" href="https://postureshift.info/fr/" />
+<link rel="alternate" hreflang="pl" href="https://postureshift.info/pl/" />
+<link rel="alternate" hreflang="cs" href="https://postureshift.info/cs/" />
+<link rel="alternate" hreflang="no" href="https://postureshift.info/no/" />
+<link rel="alternate" hreflang="sv" href="https://postureshift.info/sv/" />
+<link rel="alternate" hreflang="x-default" href="https://postureshift.info/" />
 <link rel="icon" href="icon.svg" type="image/svg+xml" />
 <link rel="stylesheet" href="css/site.css" />
 </head>
@@ -16,24 +29,39 @@
 
 <header class="site-header">
   <a class="logo" href="/">
-    <span class="logo-mark" aria-hidden="true">🧘</span>
-    <span>Bodenzeit</span>
+    <img class="logo-mark" src="icon.svg" alt="" aria-hidden="true" width="28" height="28" />
+    <span>PostureShift</span>
   </a>
   <nav class="site-nav" aria-label="Seitennavigation">
     <a href="#hintergrund">Hintergrund</a>
-    <a href="#funktionen">Funktionen</a>
+    <a href="#loesung">Lösung</a>
+    <details class="lang-switch">
+      <summary>DE</summary>
+      <ul>
+        <li><a href="/" aria-current="page">Deutsch</a></li>
+        <li><a href="/en/">English</a></li>
+        <li><a href="/da/">Dansk</a></li>
+        <li><a href="/nl/">Nederlands</a></li>
+        <li><a href="/fr/">Français</a></li>
+        <li><a href="/pl/">Polski</a></li>
+        <li><a href="/cs/">Čeština</a></li>
+        <li><a href="/no/">Norsk</a></li>
+        <li><a href="/sv/">Svenska</a></li>
+      </ul>
+    </details>
     <a href="https://app.postureshift.info/" class="btn btn-primary">App starten</a>
   </nav>
 </header>
 
 <section class="hero">
   <div class="hero-copy">
-    <p class="eyebrow">Kostenlose Web-App · funktioniert offline</p>
-    <h1>Dein Rücken hält nicht still — warum solltest du es tun?</h1>
+    <p class="eyebrow eyebrow-warn">Rückenschmerzen im Büro?</p>
+    <h1>Dein Rücken schmerzt nicht vom Sitzen. Er schmerzt vom Stillhalten.</h1>
     <p class="hero-lede">
-      Bodenzeit taktet den Wechsel zwischen Boden-, Sitz- und Stehpositionen im Büro und im
-      Auto — mit einstellbaren Zeiten, einer frei erweiterbaren Haltungs-Datenbank und
-      sanften Erinnerungen, auch für die kurze Gehrunde zwischendurch.
+      PostureShift taktet den Wechsel zwischen unterschiedlichen Sitz-, Boden- und
+      Stehpositionen im Büro und im Auto — mit einstellbaren Zeiten, einer frei
+      erweiterbaren Haltungs-Datenbank und sanften Erinnerungen. Nicht eine bestimmte
+      Position ist die Lösung, sondern der regelmäßige Wechsel.
     </p>
     <div class="hero-actions">
       <a href="https://app.postureshift.info/" class="btn btn-primary">Jetzt kostenlos starten</a>
@@ -41,38 +69,41 @@
     </div>
   </div>
   <div class="hero-art" aria-hidden="true">
-    <svg viewBox="0 0 420 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Drei Silhouetten in unterschiedlichen Sitz- und Stehpositionen, verbunden durch einen kreisförmigen Pfeil">
+    <svg viewBox="0 0 480 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Person sitzt zusammengesunken am Schreibtisch, ein roter Schmerzpunkt markiert den unteren Rücken">
       <defs>
         <style>
-          .bz-fig { fill: #2f6e5c; }
-          .bz-fig-light { fill: #7fb6a4; }
+          .ps-fig { fill: #2f6e5c; }
+          .ps-fig-light { fill: #7fb6a4; }
+          .ps-desk { fill: #c7ddd3; }
         </style>
       </defs>
-      <path d="M60,290 A150,120 0 1 1 360,290" fill="none" stroke="#a9cfc0" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round" />
-      <path d="M348,268 l16,20 l-24,6 z" fill="#a9cfc0" />
 
-      <!-- Boden: Schneidersitz -->
-      <g transform="translate(70,220)">
-        <circle cx="0" cy="-64" r="16" class="bz-fig" />
-        <path d="M-30,10 C-30,-30 30,-30 30,10 L30,26 C10,40 -10,40 -30,26 Z" class="bz-fig-light" />
-        <path d="M-30,20 L-46,34 M30,20 L46,34" stroke="#2f6e5c" stroke-width="8" stroke-linecap="round" fill="none" />
+      <!-- Boden / Schatten -->
+      <ellipse cx="230" cy="382" rx="170" ry="14" fill="#e4efe9" />
+
+      <!-- Stuhl -->
+      <rect x="150" y="270" width="14" height="100" rx="6" class="ps-desk" />
+      <rect x="266" y="270" width="14" height="100" rx="6" class="ps-desk" />
+      <rect x="140" y="256" width="150" height="16" rx="8" class="ps-desk" />
+
+      <!-- Schreibtisch -->
+      <rect x="270" y="230" width="150" height="14" rx="6" class="ps-desk" />
+      <rect x="284" y="244" width="10" height="120" fill="#c7ddd3" />
+      <rect x="396" y="244" width="10" height="120" fill="#c7ddd3" />
+
+      <!-- Zusammengesunkene Sitzfigur: gekrümmter Rücken, hängende Schultern -->
+      <g>
+        <circle cx="210" cy="150" r="20" class="ps-fig" />
+        <path d="M186,172 C176,200 178,230 200,254 C215,270 235,272 258,262 L262,244 C242,250 224,246 214,232 C204,218 206,196 218,178 Z" class="ps-fig-light" />
+        <path d="M258,262 L296,236" stroke="#7fb6a4" stroke-width="12" stroke-linecap="round" />
+        <path d="M200,254 L188,300 M232,258 L246,306" stroke="#2f6e5c" stroke-width="10" stroke-linecap="round" fill="none" />
       </g>
 
-      <!-- Stuhl: aufrecht -->
-      <g transform="translate(210,205)">
-        <circle cx="0" cy="-78" r="16" class="bz-fig" />
-        <rect x="-16" y="-58" width="32" height="46" rx="10" class="bz-fig-light" />
-        <path d="M-16,-30 L-30,10 M16,-30 L30,10" stroke="#2f6e5c" stroke-width="8" stroke-linecap="round" fill="none" />
-        <rect x="-34" y="10" width="68" height="8" rx="4" fill="#c7ddd3" />
-        <rect x="-30" y="18" width="8" height="26" fill="#c7ddd3" />
-        <rect x="22" y="18" width="8" height="26" fill="#c7ddd3" />
-      </g>
-
-      <!-- Stehen -->
-      <g transform="translate(350,196)">
-        <circle cx="0" cy="-92" r="16" class="bz-fig" />
-        <rect x="-15" y="-72" width="30" height="50" rx="10" class="bz-fig-light" />
-        <path d="M-8,-22 L-12,40 M8,-22 L12,40" stroke="#2f6e5c" stroke-width="9" stroke-linecap="round" fill="none" />
+      <!-- Schmerzpunkt am unteren Rücken -->
+      <g>
+        <circle cx="214" cy="222" r="9" fill="#c1554a" opacity="0.9" />
+        <path d="M214,222 L214,200 M214,222 L192,214 M214,222 L192,232 M214,222 L236,206 M214,222 L238,232"
+              stroke="#c1554a" stroke-width="3" stroke-linecap="round" opacity="0.55" />
       </g>
     </svg>
   </div>
@@ -81,11 +112,23 @@
 <section class="section section-tint" id="hintergrund">
   <div class="section-inner">
     <p class="eyebrow">Der Hintergrund</p>
-    <h2>Nicht das Sitzen ist das Problem — sondern das Stillhalten</h2>
+    <h2>Was wir über Sitzen, Schmerzen und Bewegung wissen</h2>
     <p class="lead">
-      "Sitting is the new smoking" ist zu einer geflügelten Warnung geworden: stundenlanges,
-      ununterbrochenes Sitzen wird mit Rückenschmerzen und Stoffwechselrisiken in Verbindung
-      gebracht. Die Forschung dazu ist allerdings differenzierter, als der Slogan vermuten lässt.
+      "Sitting is the new smoking" ist zu einer geflügelten Warnung geworden — und tatsächlich
+      steckt einiges an Forschung dahinter. Ein Blick auf die wichtigsten Quellen zeigt aber
+      auch: Es geht nicht darum, das Sitzen zu verbannen, sondern darum, wie wir sitzen und
+      wie oft wir die Position wechseln.
+    </p>
+
+    <h3>„Sitting is the new smoking"</h3>
+    <p>
+      Geprägt hat den Satz der Mayo-Clinic-Forscher Dr. James Levine. Eine wichtige Grundlage
+      dafür lieferte eine Studie des Pennington Biomedical Research Center mit Daten von über
+      17.000 Kanadierinnen und Kanadiern: Sie fand einen Zusammenhang zwischen langen,
+      ununterbrochenen täglichen Sitzzeiten und einem erhöhten Sterberisiko — unabhängig davon,
+      wie sportlich aktiv die Personen in ihrer Freizeit sonst waren. Regelmäßige Unterbrechungen
+      des Sitzens scheinen also einen eigenständigen Effekt zu haben, den reiner Sport in der
+      Freizeit allein nicht ausgleicht.
     </p>
 
     <h3>Was die Hadza uns zeigen</h3>
@@ -100,11 +143,17 @@
       unterschiedlich aktive Ruhehaltungen angepasst — nicht an stundenlanges, reglos gleiches
       Sitzen in ein und derselben Position.
     </p>
+
+    <h3>Über 100 Sitzpositionen weltweit</h3>
     <p>
-      Dieses Muster findet sich in ähnlicher Form in vielen traditionellen Sitzgewohnheiten
-      weltweit: Hocken, Kniesitz, Schneidersitz und weitere Bodenhaltungen sind über
-      Kulturen hinweg verbreitet — im Gegensatz zur vergleichsweise jungen, sehr einseitigen
-      Stuhlhaltung, die in vielen Büros den ganzen Tag dominiert.
+      Dass der Stuhl nur eine von vielen Lösungen ist, zeigt auch die Kulturanthropologie. Der
+      Anthropologe Gordon W. Hewes dokumentierte in seiner vielzitierten Studie zur weltweiten
+      Verbreitung von Ruhehaltungen über 100 unterschiedliche gewohnheitsmäßige Sitz- und
+      Ruhepositionen aus Kulturen rund um den Globus — von tiefen Hocken bei vielen
+      afrikanischen und asiatischen Ethnien bis zu eigenständigen Kniesitzformen etwa bei den
+      Ainu in Japan oder Sitzgewohnheiten nordamerikanischer Volksgruppen wie der Kaska in
+      Kanada. Der Bürostuhl, wie wir ihn kennen, ist im Vergleich dazu eine junge und
+      vergleichsweise einseitige Erfindung.
     </p>
 
     <h3>Zur Einordnung: keine Panik vor dem Stuhl</h3>
@@ -123,27 +172,58 @@
       <cite>— sinngemäß nach Daniel Lieberman, „Exercised" (2021)</cite>
     </blockquote>
     <p>
-      Genau diese Balance ist die Idee hinter Bodenzeit: nicht das Sitzen verteufeln, sondern
-      regelmäßig zwischen unterschiedlich aktiven Haltungen wechseln — Boden, Stuhl, Stehen
-      und weitere Varianten, in einem für dich passenden Rhythmus.
+      Genau diese Balance ist die Idee hinter PostureShift: nicht eine einzelne "richtige"
+      Haltung vorschreiben, sondern regelmäßig zwischen unterschiedlich aktiven Positionen
+      wechseln — in dem Rhythmus und mit den Positionen, die zu deinem Alltag passen.
     </p>
 
     <div class="source-list">
       <p><strong>Quellen</strong></p>
+      <p>Katzmarzyk PT, Church TS, Craig CL, Bouchard C (2009): „Sitting Time and Mortality from All Causes, Cardiovascular Disease, and Cancer." Medicine &amp; Science in Sports &amp; Exercise 41(5). Pennington Biomedical Research Center, Auswertung der Canada Fitness Survey (n ≈ 17.000).</p>
       <p>Raichlen DA, Pontzer H, et al. (2020): „Sitting, squatting, and the evolutionary biology of human inactivity." PNAS 117(13). <a href="https://www.pnas.org/doi/10.1073/pnas.1911868117" target="_blank" rel="noopener noreferrer">pnas.org/doi/10.1073/pnas.1911868117</a></p>
+      <p>Hewes GW (1955): „World Distribution of Certain Postural Habits." American Anthropologist 57(2).</p>
       <p>Lieberman DE (2021): „Exercised: The Science of Physical Activity, Rest and Health." Pantheon Books.</p>
     </div>
   </div>
 </section>
 
-<section class="section" id="funktionen">
+<section class="section" id="loesung">
   <div class="section-inner section-inner-wide">
-    <p class="eyebrow">So hilft Bodenzeit</p>
-    <h2>Eine getaktete Rotation statt starrer Regeln</h2>
+    <p class="eyebrow">Die Lösung</p>
+    <h2>Regelmäßiger Wechsel — in welcher Form auch immer</h2>
     <p class="lead">
-      Bodenzeit stellt dir eine frei erweiterbare Haltungs-Datenbank bereit und lässt dich
-      daraus deine eigene Rotation zusammenstellen — getrennt für Büro und Auto, mit eigenem
-      Timer und eigenen Einstellungen.
+      Der Kern ist nicht eine bestimmte Haltung, sondern der getaktete Wechsel zwischen
+      mehreren. PostureShift stellt dir eine frei erweiterbare Haltungs-Datenbank bereit und
+      lässt dich daraus deine eigene Rotation zusammenstellen — passend zu deiner konkreten
+      Bürosituation.
+    </p>
+
+    <div class="posture-grid">
+      <div class="posture-card posture-card-highlight">
+        <span class="posture-badge">Besonders effektiv</span>
+        <h3>Boden</h3>
+        <p>Schneidersitz, Fersensitz und weitere Bodenhaltungen aktivieren Bein- und Rumpfmuskulatur am stärksten — die Haltung, die in der Forschung am besten abschneidet.</p>
+      </div>
+      <div class="posture-card">
+        <h3>Stuhl</h3>
+        <p>Ganz normales Sitzen bleibt Teil der Rotation — entscheidend ist, dass es nicht die einzige Position über Stunden bleibt.</p>
+      </div>
+      <div class="posture-card">
+        <h3>Barhocker &amp; aktive Sitzgelegenheiten</h3>
+        <p>Sattelhocker, Wackelstühle und andere aktive Sitzmöbel halten die Rumpfmuskulatur auch im Sitzen gefordert.</p>
+      </div>
+      <div class="posture-card">
+        <h3>Stehen</h3>
+        <p>Am Stehpult oder für die kurze Gehrunde zwischendurch — ohne dass ein Stehschreibtisch nötig ist.</p>
+      </div>
+    </div>
+
+    <p class="posture-note">
+      Bodensitzen schneidet in der Forschung am besten ab — deshalb heben wir es hervor. Aber
+      nicht jeder kann oder will das im Büro umsetzen: Kleidung, Platzverhältnisse, Kolleg:innen
+      oder die Möbelsituation setzen oft Grenzen. PostureShift funktioniert deshalb genauso gut
+      mit einer Rotation ausschließlich aus Stuhl, Barhocker und Stehen — der Wechsel selbst ist
+      der entscheidende Faktor, nicht eine bestimmte Position.
     </p>
 
     <div class="feature-grid">
@@ -170,7 +250,7 @@
       <div class="feature-card">
         <div class="feature-icon">📴</div>
         <h3>Offline-fähig</h3>
-        <p>Bodenzeit funktioniert vollständig lokal auf deinem Gerät — ganz ohne Konto nutzbar.</p>
+        <p>PostureShift funktioniert vollständig lokal auf deinem Gerät — ganz ohne Konto nutzbar.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">🔄</div>
@@ -181,7 +261,7 @@
 
     <div class="gallery">
       <figure>
-        <img src="screenshots/timer.png" alt="Bodenzeit-Timer mit laufender Rotation aus Schneidersitz, Sattelhocker und neutralem Stand" loading="lazy" />
+        <img src="screenshots/timer.png" alt="PostureShift-Timer mit laufender Rotation aus Schneidersitz, Sattelhocker und neutralem Stand" loading="lazy" />
         <figcaption>Positions-Timer mit laufender Rotation</figcaption>
       </figure>
       <figure>
@@ -196,7 +276,7 @@
   </div>
 </section>
 
-<!-- Nur sichtbar nach Werbe-Cookie-Einwilligung (BZConsent) — entschieden in
+<!-- Nur sichtbar nach Werbe-Cookie-Einwilligung (PSConsent) — entschieden in
      js/site.js. Das AdSense-Skript wird erst dann von js/ads.js dynamisch
      nachgeladen, nie vorab. -->
 <section class="section ad-section" id="adSlotWrapper">
@@ -215,14 +295,14 @@
 
 <section class="cta-band">
   <h2>Bereit für mehr Bewegung im Alltag?</h2>
-  <p>Bodenzeit ist kostenlos, läuft direkt im Browser und lässt sich als App installieren.</p>
+  <p>PostureShift ist kostenlos, läuft direkt im Browser und lässt sich als App installieren.</p>
   <a href="https://app.postureshift.info/" class="btn btn-primary">Jetzt kostenlos starten</a>
 </section>
 
 <section class="section section-tint">
   <div class="section-inner support-section">
     <p class="eyebrow">Unterstützung</p>
-    <h2>Bodenzeit gefällt dir?</h2>
+    <h2>PostureShift gefällt dir?</h2>
     <p>
       Die App ist kostenlos und bleibt es. Wer die Weiterentwicklung trotzdem unterstützen
       möchte, kann das freiwillig tun — ganz ohne Gegenleistung.
@@ -238,7 +318,7 @@
   </div>
 </section>
 
-<!-- Werbe-Cookie-Consent-Banner: nur sichtbar solange BZConsent.getStatus()
+<!-- Werbe-Cookie-Consent-Banner: nur sichtbar solange PSConsent.getStatus()
      null ist. Über den Footer-Link "Cookie-Einstellungen" später erneut
      aufrufbar. -->
 <div id="consentBanner" class="consent-banner hidden" role="region" aria-label="Cookie-Einstellungen">
@@ -266,7 +346,7 @@
       Details dazu in der Datenschutzerklärung.
     </p>
   </div>
-  <p class="footer-copy">© 2026 Daniel Schwarz · Bodenzeit</p>
+  <p class="footer-copy">© 2026 Daniel Schwarz · PostureShift</p>
 </footer>
 
 <script src="js/consent.js"></script>

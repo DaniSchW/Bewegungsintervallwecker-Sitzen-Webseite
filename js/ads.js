@@ -1,8 +1,8 @@
 'use strict';
 
-/* Google-AdSense-Loader für Bodenzeit, nach dem gleichen Muster wie bei
+/* Google-AdSense-Loader für PostureShift, nach dem gleichen Muster wie bei
  * Random Jingle (js/ads.js dort). Das AdSense-Skript wird nur dynamisch
- * nachgeladen, sobald BZConsent.getStatus() === 'granted' ist — nie
+ * nachgeladen, sobald PSConsent.getStatus() === 'granted' ist — nie
  * spekulativ und nie als statisches <script>-Tag in index.html. Bei
  * späterem Widerruf gibt es kein "Entladen" eines bereits geladenen
  * Skripts (Browser unterstützen das nicht) — app.js blendet stattdessen
@@ -10,11 +10,11 @@
  * Entscheidende ist (keine Anzeige, keine weiteren Requests unsererseits).
  *
  * Verwendet dieselbe AdSense-Publisher-ID wie Random Jingle (ein Konto,
- * mehrere zugelassene Domains). Der konkrete Ad-Slot für Bodenzeit muss
+ * mehrere zugelassene Domains). Der konkrete Ad-Slot für PostureShift muss
  * im AdSense-Dashboard neu angelegt und in index.html eingetragen werden
  * (siehe REPLACE_WITH_ADSENSE_SLOT_ID dort).
  */
-const BZAds = (() => {
+const PSAds = (() => {
   const ADSENSE_SRC = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8453553622026562';
   const ADSENSE_HOST = 'googlesyndication.com';
 

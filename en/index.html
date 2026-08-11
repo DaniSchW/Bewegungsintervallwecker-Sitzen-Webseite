@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PostureShift – Stop back pain by changing position</title>
+<meta name="description" content="Back pain comes from staying still, not from sitting itself. PostureShift is a free PWA for timed switching between seated, floor, and standing positions at the office and in the car — with a free posture database, timer, and reminders." />
+<meta property="og:title" content="PostureShift – Stop back pain by changing position" />
+<meta property="og:description" content="Timed switching between seated, floor, and standing positions: a free PWA with a free posture database, timer, and reminders against back pain from prolonged sitting." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://postureshift.info/en/" />
+<meta property="og:locale" content="en_US" />
+<meta name="theme-color" content="#2f6e5c" />
+<link rel="canonical" href="https://postureshift.info/en/" />
+<link rel="alternate" hreflang="de" href="https://postureshift.info/" />
+<link rel="alternate" hreflang="en" href="https://postureshift.info/en/" />
+<link rel="alternate" hreflang="da" href="https://postureshift.info/da/" />
+<link rel="alternate" hreflang="nl" href="https://postureshift.info/nl/" />
+<link rel="alternate" hreflang="fr" href="https://postureshift.info/fr/" />
+<link rel="alternate" hreflang="pl" href="https://postureshift.info/pl/" />
+<link rel="alternate" hreflang="cs" href="https://postureshift.info/cs/" />
+<link rel="alternate" hreflang="no" href="https://postureshift.info/no/" />
+<link rel="alternate" hreflang="sv" href="https://postureshift.info/sv/" />
+<link rel="alternate" hreflang="x-default" href="https://postureshift.info/" />
+<link rel="icon" href="../icon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="../css/site.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="/en/">
+    <img class="logo-mark" src="../icon.svg" alt="" aria-hidden="true" width="28" height="28" />
+    <span>PostureShift</span>
+  </a>
+  <nav class="site-nav" aria-label="Page navigation">
+    <a href="#hintergrund">Background</a>
+    <a href="#loesung">Solution</a>
+    <details class="lang-switch">
+      <summary>EN</summary>
+      <ul>
+        <li><a href="/">Deutsch</a></li>
+        <li><a href="/en/" aria-current="page">English</a></li>
+        <li><a href="/da/">Dansk</a></li>
+        <li><a href="/nl/">Nederlands</a></li>
+        <li><a href="/fr/">Français</a></li>
+        <li><a href="/pl/">Polski</a></li>
+        <li><a href="/cs/">Čeština</a></li>
+        <li><a href="/no/">Norsk</a></li>
+        <li><a href="/sv/">Svenska</a></li>
+      </ul>
+    </details>
+    <a href="https://app.postureshift.info/" class="btn btn-primary">Launch app</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow eyebrow-warn">Back pain at the office?</p>
+    <h1>Your back doesn't hurt from sitting. It hurts from staying still.</h1>
+    <p class="hero-lede">
+      PostureShift times your switches between different seated, floor, and
+      standing positions at the office and in the car — with adjustable
+      intervals, a freely extendable posture database, and gentle reminders.
+      The solution isn't one particular position, but changing position
+      regularly.
+    </p>
+    <div class="hero-actions">
+      <a href="https://app.postureshift.info/" class="btn btn-primary">Start free now</a>
+      <a href="#hintergrund" class="btn btn-ghost">Why this helps</a>
+    </div>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <svg viewBox="0 0 480 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A person slumped at a desk, a red pain point marking the lower back">
+      <defs>
+        <style>
+          .ps-fig { fill: #2f6e5c; }
+          .ps-fig-light { fill: #7fb6a4; }
+          .ps-desk { fill: #c7ddd3; }
+        </style>
+      </defs>
+
+      <!-- Boden / Schatten -->
+      <ellipse cx="230" cy="382" rx="170" ry="14" fill="#e4efe9" />
+
+      <!-- Stuhl -->
+      <rect x="150" y="270" width="14" height="100" rx="6" class="ps-desk" />
+      <rect x="266" y="270" width="14" height="100" rx="6" class="ps-desk" />
+      <rect x="140" y="256" width="150" height="16" rx="8" class="ps-desk" />
+
+      <!-- Schreibtisch -->
+      <rect x="270" y="230" width="150" height="14" rx="6" class="ps-desk" />
+      <rect x="284" y="244" width="10" height="120" fill="#c7ddd3" />
+      <rect x="396" y="244" width="10" height="120" fill="#c7ddd3" />
+
+      <!-- Zusammengesunkene Sitzfigur: gekrümmter Rücken, hängende Schultern -->
+      <g>
+        <circle cx="210" cy="150" r="20" class="ps-fig" />
+        <path d="M186,172 C176,200 178,230 200,254 C215,270 235,272 258,262 L262,244 C242,250 224,246 214,232 C204,218 206,196 218,178 Z" class="ps-fig-light" />
+        <path d="M258,262 L296,236" stroke="#7fb6a4" stroke-width="12" stroke-linecap="round" />
+        <path d="M200,254 L188,300 M232,258 L246,306" stroke="#2f6e5c" stroke-width="10" stroke-linecap="round" fill="none" />
+      </g>
+
+      <!-- Schmerzpunkt am unteren Rücken -->
+      <g>
+        <circle cx="214" cy="222" r="9" fill="#c1554a" opacity="0.9" />
+        <path d="M214,222 L214,200 M214,222 L192,214 M214,222 L192,232 M214,222 L236,206 M214,222 L238,232"
+              stroke="#c1554a" stroke-width="3" stroke-linecap="round" opacity="0.55" />
+      </g>
+    </svg>
+  </div>
+</section>
+
+<section class="section section-tint" id="hintergrund">
+  <div class="section-inner">
+    <p class="eyebrow">The background</p>
+    <h2>What we know about sitting, pain, and movement</h2>
+    <p class="lead">
+      "Sitting is the new smoking" has become a catchphrase — and there really
+      is some research behind it. But a closer look at the key sources also
+      shows: it's not about banning sitting altogether, but about how we sit
+      and how often we change position.
+    </p>
+
+    <h3>"Sitting is the new smoking"</h3>
+    <p>
+      The phrase was coined by Mayo Clinic researcher Dr. James Levine. An
+      important basis for it came from a study by the Pennington Biomedical
+      Research Center using data from more than 17,000 Canadians: it found a
+      link between long, uninterrupted daily sitting time and an increased
+      mortality risk — regardless of how physically active people otherwise
+      were in their leisure time. Regular breaks from sitting therefore
+      appear to have an effect of their own, one that leisure-time exercise
+      alone does not offset.
+    </p>
+
+    <h3>What the Hadza show us</h3>
+    <p>
+      A widely cited study by Raichlen, Pontzer, and colleagues (PNAS, 2020)
+      examined the Hadza, a hunter-gatherer community in Tanzania, using
+      movement sensors — and produced a surprising finding: the Hadza sit or
+      rest for almost as long, in total, as people in industrialized nations.
+      The difference lies not in the duration but in the posture. Resting
+      positions such as deep squatting or kneeling keep the leg and core
+      muscles noticeably more active than sitting in a chair does. The
+      authors call this the <em>"Inactivity Mismatch Hypothesis"</em>: our
+      bodies are evolutionarily adapted to varyingly active resting postures
+      — not to sitting motionless in one and the same position for hours on
+      end.
+    </p>
+
+    <h3>Over 100 sitting positions worldwide</h3>
+    <p>
+      Cultural anthropology also shows that the chair is just one of many
+      solutions. Anthropologist Gordon W. Hewes documented more than 100
+      distinct habitual sitting and resting postures from cultures around the
+      globe in his widely cited study on the worldwide distribution of
+      resting postures — from deep squatting among many African and Asian
+      ethnic groups to distinct kneeling-sit forms such as among the Ainu in
+      Japan or the sitting habits of North American peoples such as the
+      Kaska in Canada. By comparison, the office chair as we know it is a
+      young and relatively one-sided invention.
+    </p>
+
+    <h3>Some perspective: no need to fear the chair</h3>
+    <p>
+      Evolutionary biologist Daniel Lieberman (Harvard), who examines exactly
+      this research in detail in his book <em>"Exercised"</em>, also warns
+      against overstating the case: sitting itself is a normal human
+      behavior that has always been common, and it is not inherently
+      harmful. It becomes a problem mainly when a single position is held for
+      very long stretches without interruption.
+    </p>
+    <blockquote class="pull-quote">
+      Relax a little about sitting. Yes, it's good not to sit all day. It's
+      good to move — but we shouldn't scare people about something as
+      natural and normal as sitting.
+      <cite>— paraphrased from Daniel Lieberman, "Exercised" (2021)</cite>
+    </blockquote>
+    <p>
+      That balance is exactly the idea behind PostureShift: not prescribing
+      one single "correct" posture, but regularly switching between
+      differently active positions — at the pace and with the positions that
+      fit your everyday life.
+    </p>
+
+    <div class="source-list">
+      <p><strong>Sources</strong></p>
+      <p>Katzmarzyk PT, Church TS, Craig CL, Bouchard C (2009): „Sitting Time and Mortality from All Causes, Cardiovascular Disease, and Cancer." Medicine &amp; Science in Sports &amp; Exercise 41(5). Pennington Biomedical Research Center, Auswertung der Canada Fitness Survey (n ≈ 17.000).</p>
+      <p>Raichlen DA, Pontzer H, et al. (2020): „Sitting, squatting, and the evolutionary biology of human inactivity." PNAS 117(13). <a href="https://www.pnas.org/doi/10.1073/pnas.1911868117" target="_blank" rel="noopener noreferrer">pnas.org/doi/10.1073/pnas.1911868117</a></p>
+      <p>Hewes GW (1955): „World Distribution of Certain Postural Habits." American Anthropologist 57(2).</p>
+      <p>Lieberman DE (2021): „Exercised: The Science of Physical Activity, Rest and Health." Pantheon Books.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="loesung">
+  <div class="section-inner section-inner-wide">
+    <p class="eyebrow">The solution</p>
+    <h2>Regular change — in whatever form works for you</h2>
+    <p class="lead">
+      The core idea isn't one particular posture, but the timed switching
+      between several. PostureShift gives you a freely extendable posture
+      database and lets you build your own rotation from it — matched to
+      your actual office setup.
+    </p>
+
+    <div class="posture-grid">
+      <div class="posture-card posture-card-highlight">
+        <span class="posture-badge">Especially effective</span>
+        <h3>Floor</h3>
+        <p>Cross-legged sitting, kneeling ("seiza"), and other floor positions activate leg and core muscles the most — the posture that scores best in the research.</p>
+      </div>
+      <div class="posture-card">
+        <h3>Chair</h3>
+        <p>Ordinary sitting stays part of the rotation — what matters is that it isn't the only position for hours on end.</p>
+      </div>
+      <div class="posture-card">
+        <h3>Bar stools &amp; active seating</h3>
+        <p>Saddle stools, wobble stools, and other active seating keep your core muscles engaged even while sitting.</p>
+      </div>
+      <div class="posture-card">
+        <h3>Standing</h3>
+        <p>At a standing desk or for a short walk in between — no standing desk required.</p>
+      </div>
+    </div>
+
+    <p class="posture-note">
+      Floor sitting scores best in the research — that's why we highlight it.
+      But not everyone can or wants to do that at the office: clothing, space
+      constraints, colleagues, or the furniture situation often set limits.
+      That's why PostureShift works just as well with a rotation made up
+      solely of chair, bar stool, and standing — the switching itself is the
+      decisive factor, not any one particular position.
+    </p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🗂️</div>
+        <h3>Posture database</h3>
+        <p>Floor, chair, bar stool, active seating, standing, car — pre-filled and freely extendable with your own postures.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⏱️</div>
+        <h3>Two timer levels</h3>
+        <p>A position timer for switching posture, and a walk timer for a short break in between — both independently adjustable.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔔</div>
+        <h3>Sound, voice, push</h3>
+        <p>Three notification channels, each toggleable on its own — including action buttons right inside the push notification.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🚗</div>
+        <h3>Office and car, separately</h3>
+        <p>Two independent rotations, each with its own timer, its own settings, and its own onboarding questionnaire.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📴</div>
+        <h3>Works offline</h3>
+        <p>PostureShift runs entirely locally on your device — usable without any account at all.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔄</div>
+        <h3>Optional sync</h3>
+        <p>With a free account (login via magic link, no password), your rotation syncs across devices.</p>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <figure>
+        <img src="../screenshots/timer.png" alt="PostureShift timer with a running rotation of cross-legged sitting, saddle stool, and neutral standing" loading="lazy" />
+        <figcaption>Position timer with a running rotation</figcaption>
+      </figure>
+      <figure>
+        <img src="../screenshots/datenbank.png" alt="Posture database, grouped by the categories floor and chair" loading="lazy" />
+        <figcaption>Freely searchable posture database</figcaption>
+      </figure>
+      <figure>
+        <img src="../screenshots/einstellungen.png" alt="Settings with position-switch interval, walk-break interval, and notification channels" loading="lazy" />
+        <figcaption>Settings per tab, with test buttons</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- Nur sichtbar nach Werbe-Cookie-Einwilligung (PSConsent) — entschieden in
+     js/site.js. Das AdSense-Skript wird erst dann von js/ads.js dynamisch
+     nachgeladen, nie vorab. -->
+<section class="section ad-section" id="adSlotWrapper">
+  <div class="section-inner">
+    <p class="ad-label">Advertisement</p>
+    <div id="adSlotAdsense" class="ad-slot hidden">
+      <ins class="adsbygoogle"
+           style="display:block; text-align:center;"
+           data-ad-layout="in-article"
+           data-ad-format="fluid"
+           data-ad-client="ca-pub-8453553622026562"
+           data-ad-slot="REPLACE_WITH_ADSENSE_SLOT_ID"></ins>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <h2>Ready for more movement in your day?</h2>
+  <p>PostureShift is free, runs right in your browser, and can be installed as an app.</p>
+  <a href="https://app.postureshift.info/" class="btn btn-primary">Start free now</a>
+</section>
+
+<section class="section section-tint">
+  <div class="section-inner support-section">
+    <p class="eyebrow">Support</p>
+    <h2>Enjoying PostureShift?</h2>
+    <p>
+      The app is free and will stay that way. If you'd still like to support
+      its development, you're welcome to do so voluntarily — with nothing
+      expected in return.
+    </p>
+    <div class="support-actions">
+      <a href="https://paypal.me/DanielSchwarz88" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+        <span aria-hidden="true">💛</span> Donate via PayPal
+      </a>
+      <a href="https://buymeacoffee.com/danielschwarz" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+        <span aria-hidden="true">☕</span> Buy Me a Coffee
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Werbe-Cookie-Consent-Banner: nur sichtbar solange PSConsent.getStatus()
+     null ist. Über den Footer-Link "Cookie-Einstellungen" später erneut
+     aufrufbar. -->
+<div id="consentBanner" class="consent-banner hidden" role="region" aria-label="Cookie settings">
+  <p>
+    We'd like to show you advertising via Google AdSense — this requires
+    setting advertising cookies. If you decline, no advertising will be
+    shown.
+  </p>
+  <div class="consent-actions">
+    <button id="consentDeclineBtn" type="button" class="btn btn-consent">Decline</button>
+    <button id="consentAcceptBtn" type="button" class="btn btn-consent">Accept advertising cookies</button>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="https://app.postureshift.info/">Go to the app</a>
+      <a href="impressum.html">Legal notice</a>
+      <a href="datenschutz.html">Privacy policy</a>
+      <a href="agb.html">Terms</a>
+      <button type="button" id="btn-cookie-settings" class="footer-link-btn">Cookie settings</button>
+    </div>
+    <p class="footer-note">
+      Advertising is only shown after explicit consent via the cookie
+      banner. See the privacy policy for details.
+    </p>
+  </div>
+  <p class="footer-copy">© 2026 Daniel Schwarz · PostureShift</p>
+</footer>
+
+<script src="../js/consent.js"></script>
+<script src="../js/ads.js"></script>
+<script src="../js/site.js"></script>
+</body>
+</html>
