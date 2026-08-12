@@ -182,7 +182,17 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--color-primary);
   max-width: 42ch;
 }
 
-.hero-art svg { width: 100%; height: auto; }
+.hero-art img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 6 / 5;
+  object-fit: cover;
+  object-position: 30% 35%;
+  border-radius: 20px;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 12px 32px rgba(30, 43, 38, 0.16);
+  display: block;
+}
 
 /* ---------- Content sections ---------- */
 .section { padding: 4rem 1.5rem; }
