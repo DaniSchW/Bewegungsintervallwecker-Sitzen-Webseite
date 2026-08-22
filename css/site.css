@@ -583,6 +583,79 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--color-primary);
 }
 .footer-link-btn:hover { color: var(--color-text); }
 
+/* ---------- Wochenplan-Karten (Bewegung im Alltag) ---------- */
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+.plan-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 1.4rem;
+}
+.plan-card h3 { margin: 0 0 0.5rem; font-size: 1.05rem; }
+.plan-card .plan-audience {
+  margin: 0 0 1rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+.plan-card ul {
+  margin: 0;
+  padding-left: 1.15rem;
+  font-size: 0.92rem;
+}
+.plan-card li { margin: 0 0 0.4rem; }
+.plan-card li:last-child { margin-bottom: 0; }
+
+/* ---------- Konstante-Umsetzung-Liste ---------- */
+.habit-list {
+  margin: 1.5rem 0;
+  padding-left: 1.25rem;
+  font-size: 1.02rem;
+}
+.habit-list li { margin: 0 0 0.7rem; }
+.habit-list li:last-child { margin-bottom: 0; }
+
+/* ---------- Sportarten-Referenztabelle ---------- */
+.table-wrap {
+  overflow-x: auto;
+  margin: 2rem 0;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+}
+.sports-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  background: var(--color-surface);
+}
+.sports-table th,
+.sports-table td {
+  padding: 0.65rem 0.9rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+  white-space: nowrap;
+}
+.sports-table th {
+  background: var(--color-surface-tint);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+.sports-table tbody tr:last-child td { border-bottom: none; }
+.sports-table tr.cat-row td {
+  background: var(--color-accent-soft-bg);
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: var(--color-primary-dark);
+  white-space: normal;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
