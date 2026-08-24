@@ -35,6 +35,13 @@
   </url>
 
   <url>
+    <!-- Verspannungen existiert bislang nur auf Deutsch, daher keine xhtml:link-Alternates. -->
+    <loc>https://postureshift.info/verspannungen.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://postureshift.info/en/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://postureshift.info/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://postureshift.info/en/" />
