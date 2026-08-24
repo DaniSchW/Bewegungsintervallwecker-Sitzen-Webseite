@@ -63,8 +63,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--color-primary);
 .logo-mark { display: block; border-radius: 7px; }
 
 .site-nav { display: flex; align-items: center; gap: 1.25rem; }
-.site-nav a { text-decoration: none; color: var(--color-text-muted); font-size: 0.95rem; }
-.site-nav a:hover { color: var(--color-text); }
+.site-nav a:not(.btn) { text-decoration: none; color: var(--color-text-muted); font-size: 0.95rem; }
+.site-nav a:not(.btn):hover { color: var(--color-text); }
 
 /* ---------- Sprachumschalter ---------- */
 /* <details>/<summary> statt JS: funktioniert ohne Skript, ist per Tastatur
