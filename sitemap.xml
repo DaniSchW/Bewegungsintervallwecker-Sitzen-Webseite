@@ -35,8 +35,145 @@
   </url>
 
   <url>
-    <!-- Verspannungen existiert bislang nur auf Deutsch, daher keine xhtml:link-Alternates. -->
     <loc>https://postureshift.info/verspannungen.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://postureshift.info/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://postureshift.info/en/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://postureshift.info/da/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://postureshift.info/nl/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://postureshift.info/fr/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://postureshift.info/pl/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://postureshift.info/cs/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://postureshift.info/no/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://postureshift.info/sv/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://postureshift.info/verspannungen.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://postureshift.info/en/verspannungen.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://postureshift.info/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://postureshift.info/en/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://postureshift.info/da/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://postureshift.info/nl/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://postureshift.info/fr/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://postureshift.info/pl/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://postureshift.info/cs/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://postureshift.info/no/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://postureshift.info/sv/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://postureshift.info/verspannungen.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://postureshift.info/da/verspannungen.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://postureshift.info/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://postureshift.info/en/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://postureshift.info/da/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://postureshift.info/nl/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://postureshift.info/fr/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://postureshift.info/pl/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://postureshift.info/cs/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://postureshift.info/no/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://postureshift.info/sv/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://postureshift.info/verspannungen.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://postureshift.info/nl/verspannungen.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://postureshift.info/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://postureshift.info/en/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://postureshift.info/da/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://postureshift.info/nl/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://postureshift.info/fr/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://postureshift.info/pl/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://postureshift.info/cs/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://postureshift.info/no/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://postureshift.info/sv/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://postureshift.info/verspannungen.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://postureshift.info/fr/verspannungen.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://postureshift.info/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://postureshift.info/en/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://postureshift.info/da/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://postureshift.info/nl/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://postureshift.info/fr/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://postureshift.info/pl/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://postureshift.info/cs/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://postureshift.info/no/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://postureshift.info/sv/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://postureshift.info/verspannungen.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://postureshift.info/pl/verspannungen.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://postureshift.info/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://postureshift.info/en/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://postureshift.info/da/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://postureshift.info/nl/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://postureshift.info/fr/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://postureshift.info/pl/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://postureshift.info/cs/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://postureshift.info/no/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://postureshift.info/sv/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://postureshift.info/verspannungen.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://postureshift.info/cs/verspannungen.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://postureshift.info/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://postureshift.info/en/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://postureshift.info/da/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://postureshift.info/nl/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://postureshift.info/fr/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://postureshift.info/pl/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://postureshift.info/cs/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://postureshift.info/no/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://postureshift.info/sv/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://postureshift.info/verspannungen.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://postureshift.info/no/verspannungen.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://postureshift.info/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://postureshift.info/en/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://postureshift.info/da/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://postureshift.info/nl/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://postureshift.info/fr/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://postureshift.info/pl/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://postureshift.info/cs/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://postureshift.info/no/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://postureshift.info/sv/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://postureshift.info/verspannungen.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://postureshift.info/sv/verspannungen.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://postureshift.info/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://postureshift.info/en/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://postureshift.info/da/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://postureshift.info/nl/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://postureshift.info/fr/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://postureshift.info/pl/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://postureshift.info/cs/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://postureshift.info/no/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://postureshift.info/sv/verspannungen.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://postureshift.info/verspannungen.html" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
