@@ -111,18 +111,13 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--color-primary);
 .lang-switch a:hover { background: var(--color-surface-tint); color: var(--color-text); }
 .lang-switch a[aria-current="page"] { color: var(--color-primary-dark); font-weight: 700; }
 
-@media (max-width: 560px) {
-  .site-header { flex-wrap: wrap; padding: 1rem; }
-  .site-nav { gap: 0.75rem; flex-wrap: wrap; }
-  .site-nav > a:not(.btn) { display: none; }
-  .site-nav .btn { padding: 0.55rem 1rem; font-size: 0.9rem; }
-  .nav-menu { display: block; }
-}
-
 /* ---------- Mobiles Menü ---------- */
 /* Wie .lang-switch: <details>/<summary> statt JS. Auf Desktop unsichtbar
    (die einzelnen Links stehen dort ohnehin direkt in der Nav), auf Mobile
-   ersetzt es die dort ausgeblendeten Links durch ein Burger-Menü. */
+   ersetzt es die dort ausgeblendeten Links durch ein Burger-Menü. Diese
+   Basis-Regel muss vor der Media Query stehen, sonst gewinnt sie dank
+   späterer Reihenfolge im Stylesheet trotz gleicher Spezifität gegen die
+   "display: block"-Regel dort und das Menü bleibt auf Mobile unsichtbar. */
 .nav-menu { display: none; position: relative; order: -1; }
 .nav-menu summary {
   cursor: pointer;
@@ -165,6 +160,14 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--color-primary);
   white-space: nowrap;
 }
 .nav-menu a:hover { background: var(--color-surface-tint); color: var(--color-text); }
+
+@media (max-width: 560px) {
+  .site-header { flex-wrap: wrap; padding: 1rem; }
+  .site-nav { gap: 0.75rem; flex-wrap: wrap; }
+  .site-nav > a:not(.btn) { display: none; }
+  .site-nav .btn { padding: 0.55rem 1rem; font-size: 0.9rem; }
+  .nav-menu { display: block; }
+}
 
 .btn {
   display: inline-block;
