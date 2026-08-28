@@ -204,6 +204,29 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--color-primary);
   .hero-art { order: -1; }
 }
 
+/* ---------- Vertiefungs-Teaser mit kleinem Bild (Startseite) ---------- */
+.teaser-split {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+.teaser-art img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 8px 24px rgba(30, 43, 38, 0.12);
+  display: block;
+}
+.teaser-copy .research-cta { justify-content: flex-start; text-align: left; }
+@media (max-width: 780px) {
+  .teaser-split { grid-template-columns: 1fr; }
+  .teaser-art { order: -1; }
+}
+
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.08em;
