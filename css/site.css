@@ -111,6 +111,48 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--color-primary);
 .lang-switch a:hover { background: var(--color-surface-tint); color: var(--color-text); }
 .lang-switch a[aria-current="page"] { color: var(--color-primary-dark); font-weight: 700; }
 
+/* ---------- Vertiefungen-Dropdown ---------- */
+/* Bündelt die vier Vertiefungsseiten (Bodensitzen, Verspannungen, Bewegung im
+   Alltag, Armentlastung) hinter einem Klapp-Menü, statt sie einzeln in der
+   Nav aufzulisten — hält die Kopfzeile bei vier Unterseiten schmal genug und
+   bleibt auch bei künftigen weiteren Vertiefungsseiten stabil. Gleiche
+   <details>/<summary>-Mechanik wie .lang-switch und .nav-menu. */
+.nav-dropdown { position: relative; font-size: 0.95rem; }
+.nav-dropdown summary {
+  cursor: pointer;
+  list-style: none;
+  color: var(--color-text-muted);
+}
+.nav-dropdown summary::-webkit-details-marker { display: none; }
+.nav-dropdown summary:hover { color: var(--color-text); }
+.nav-dropdown summary::after { content: " ▾"; }
+.nav-dropdown[open] summary::after { content: " ▴"; }
+.nav-dropdown ul {
+  position: absolute;
+  top: calc(100% + 0.6rem);
+  left: 0;
+  margin: 0;
+  padding: 0.4rem;
+  list-style: none;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(30, 43, 38, 0.14);
+  min-width: 12rem;
+  z-index: 50;
+}
+.nav-dropdown li { margin: 0; }
+.nav-dropdown a {
+  display: block;
+  padding: 0.45rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.nav-dropdown a:hover { background: var(--color-surface-tint); color: var(--color-text); }
+
 /* ---------- Mobiles Menü ---------- */
 /* Wie .lang-switch: <details>/<summary> statt JS. Auf Desktop unsichtbar
    (die einzelnen Links stehen dort ohnehin direkt in der Nav), auf Mobile
@@ -170,6 +212,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--color-primary);
     justify-content: flex-end;
   }
   .site-nav > a:not(.btn) { display: none; }
+  .site-nav > .nav-dropdown { display: none; }
   .site-nav .btn { padding: 0.55rem 1rem; font-size: 0.9rem; }
   .nav-menu { display: block; }
 }
