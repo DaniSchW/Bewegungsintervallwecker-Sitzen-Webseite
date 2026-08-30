@@ -211,6 +211,11 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--color-primary);
   gap: 2.5rem;
   align-items: center;
 }
+/* Grid-Items dürfen ohne explizites min-width:0 nicht unter ihre eigene
+   Inhaltsgröße schrumpfen — ohne das läuft die Spalte mit dem großformatigen
+   Bild (bzw. sehr langem Fließtext) auf schmalen Bildschirmen aus dem
+   Container statt umzubrechen. */
+.teaser-split > * { min-width: 0; }
 .teaser-art img {
   width: 100%;
   height: auto;
