@@ -98,6 +98,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--color-primary);
   border-radius: 10px;
   box-shadow: 0 8px 24px rgba(30, 43, 38, 0.14);
   min-width: 9rem;
+  max-height: min(70vh, 26rem);
+  overflow-y: auto;
   z-index: 50;
 }
 .lang-switch li { margin: 0; }
