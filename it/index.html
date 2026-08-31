@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PostureShift – Meno mal di schiena grazie a cambi di posizione regolari</title>
+<meta name="description" content="Gran parte del mal di schiena da ufficio deriva meno dallo stare seduti in sé quanto dal restare troppo a lungo nella stessa posizione. PostureShift è una PWA gratuita per alternare a intervalli tra postura seduta, a terra e in piedi, in ufficio e in auto — con un database di posture gratuito, un timer e promemoria." />
+<meta property="og:title" content="PostureShift – Meno mal di schiena grazie a cambi di posizione regolari" />
+<meta property="og:description" content="Alternanza cronometrata tra postura seduta, a terra e in piedi: una PWA gratuita con un database di posture gratuito, timer e promemoria per più movimento contro la sedentarietà prolungata e unilaterale." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://postureshift.info/it/" />
+<meta property="og:locale" content="it_IT" />
+<meta name="theme-color" content="#2f6e5c" />
+<link rel="canonical" href="https://postureshift.info/it/" />
+<link rel="alternate" hreflang="de" href="https://postureshift.info/" />
+<link rel="alternate" hreflang="en" href="https://postureshift.info/en/" />
+<link rel="alternate" hreflang="da" href="https://postureshift.info/da/" />
+<link rel="alternate" hreflang="nl" href="https://postureshift.info/nl/" />
+<link rel="alternate" hreflang="fr" href="https://postureshift.info/fr/" />
+<link rel="alternate" hreflang="pl" href="https://postureshift.info/pl/" />
+<link rel="alternate" hreflang="cs" href="https://postureshift.info/cs/" />
+<link rel="alternate" hreflang="no" href="https://postureshift.info/no/" />
+<link rel="alternate" hreflang="sv" href="https://postureshift.info/sv/" />
+<link rel="alternate" hreflang="x-default" href="https://postureshift.info/" />
+<link rel="icon" href="../icon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="../css/site.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://postureshift.info/#organization",
+      "name": "PostureShift",
+      "url": "https://postureshift.info/",
+      "logo": "https://postureshift.info/icon.svg"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://postureshift.info/it/#website",
+      "url": "https://postureshift.info/it/",
+      "name": "PostureShift",
+      "inLanguage": "it",
+      "publisher": {
+        "@id": "https://postureshift.info/#organization"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="/it/">
+    <img class="logo-mark" src="../icon.svg" alt="" aria-hidden="true" width="28" height="28" />
+    <span>PostureShift</span>
+  </a>
+  <nav class="site-nav" aria-label="Navigazione della pagina">
+    <details class="nav-menu">
+      <summary aria-label="Menü öffnen"><span class="nav-menu-bar"></span><span class="nav-menu-bar"></span><span class="nav-menu-bar"></span></summary>
+      <ul>
+        <li><a href="#hintergrund">Contesto</a></li>
+        <li><a href="#loesung">Soluzione</a></li>
+        <li><a href="floor-sitting.html">Sedersi a terra</a></li>
+        <li><a href="muscle-tension.html">Tensione muscolare</a></li>
+        <li><a href="arm-relief.html">Sollievo per le braccia</a></li>
+      </ul>
+    </details>
+    <a href="#hintergrund">Contesto</a>
+    <a href="#loesung">Soluzione</a>
+    <details class="nav-dropdown">
+      <summary>Approfondimenti</summary>
+      <ul>
+      <li><a href="floor-sitting.html">Sedersi a terra</a></li>
+      <li><a href="muscle-tension.html">Tensione muscolare</a></li>
+      <li><a href="arm-relief.html">Sollievo per le braccia</a></li>
+      </ul>
+    </details>
+    <details class="lang-switch">
+      <summary>IT</summary>
+      <ul>
+        <li><a href="/">Deutsch</a></li>
+        <li><a href="/en/" aria-current="page">English</a></li>
+        <li><a href="/da/">Dansk</a></li>
+        <li><a href="/nl/">Nederlands</a></li>
+        <li><a href="/fr/">Français</a></li>
+        <li><a href="/pl/">Polski</a></li>
+        <li><a href="/cs/">Čeština</a></li>
+        <li><a href="/no/">Norsk</a></li>
+        <li><a href="/sv/">Svenska</a></li>
+      </ul>
+    </details>
+    <a href="https://app.postureshift.info/" class="btn btn-primary">Avvia l'app</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow eyebrow-warn">Mal di schiena in ufficio?</p>
+    <h1>Forse la tua schiena non fa male perché stai seduto. Forse fa male perché rimani fermo.</h1>
+    <p class="hero-lede">
+      PostureShift cronometra i tuoi cambi tra diverse posizioni sedute, a
+      terra e in piedi, in ufficio e in auto — con intervalli regolabili, un
+      database di posture liberamente ampliabile e promemoria discreti.
+      La soluzione non è una posizione particolare, ma cambiare posizione
+      regolarmente.
+    </p>
+    <div class="hero-actions">
+      <a href="https://app.postureshift.info/" class="btn btn-primary">Inizia gratis ora</a>
+      <a href="#hintergrund" class="btn btn-ghost">Perché funziona</a>
+    </div>
+    <p class="hero-disclaimer">
+      PostureShift è uno strumento di movimento e promemoria e non sostituisce
+      un parere medico, una diagnosi o un trattamento. In caso di disturbi
+      persistenti, consulta un professionista qualificato.
+    </p>
+  </div>
+  <div class="hero-art">
+    <img
+      src="../images/hero-ruecken.jpg"
+      alt="Donna con mal di schiena che si tiene la parte bassa della schiena mentre è seduta alla scrivania in ufficio"
+      width="1920" height="1080"
+      fetchpriority="high"
+    />
+  </div>
+</section>
+
+<section class="section section-tint" id="hintergrund">
+  <div class="section-inner section-inner-wide">
+    <p class="eyebrow">Il contesto</p>
+    <h2>Cosa sappiamo su postura seduta, dolore e movimento</h2>
+    <p class="lead">
+      "Stare seduti è il nuovo fumo" è diventato uno slogan — e dietro c'è
+      davvero un po' di ricerca scientifica. Ma uno sguardo più attento alle
+      fonti principali mostra anche un'altra cosa: non si tratta di vietare
+      del tutto lo stare seduti, ma di come sediamo e con quale frequenza
+      cambiamo posizione.
+    </p>
+
+    <div class="research-item">
+      <h3>"Stare seduti è il nuovo fumo"</h3>
+      <p class="research-teaser">
+        La frase è stata coniata dal ricercatore della Mayo Clinic Dr. James
+        Levine. Una base importante è arrivata da uno studio del Pennington
+        Biomedical Research Center basato sui dati di oltre 17.000 canadesi:
+        è stato individuato un legame tra un tempo giornaliero di seduta
+        lungo e ininterrotto e un aumento del rischio di mortalità.
+      </p>
+      <details class="research-more">
+        <summary><span class="more-label">continua a leggere…</span><span class="less-label">mostra meno</span></summary>
+        <p>
+          Questa associazione si è mantenuta indipendentemente da quanto le
+          persone fossero altrimenti attive fisicamente nel tempo libero. Le
+          pause regolari dalla posizione seduta sembrano quindi avere un
+          effetto proprio, che l'attività fisica nel tempo libero da sola
+          non compensa.
+        </p>
+      </details>
+    </div>
+
+    <div class="research-item">
+      <h3>Cosa ci mostrano gli Hadza</h3>
+      <p class="research-teaser">
+        Uno studio molto citato di Raichlen, Pontzer e colleghi (PNAS, 2020)
+        ha esaminato gli Hadza, una comunità di cacciatori-raccoglitori in
+        Tanzania, usando sensori di movimento — e ha prodotto un risultato
+        sorprendente: gli Hadza restano seduti o a riposo per un tempo
+        complessivo quasi pari a quello delle persone nelle nazioni
+        industrializzate.
+      </p>
+      <details class="research-more">
+        <summary><span class="more-label">continua a leggere…</span><span class="less-label">mostra meno</span></summary>
+        <p>
+          La differenza non sta nella durata, ma nella postura. Posizioni di
+          riposo come l'accovacciamento profondo o l'inginocchiarsi
+          mantengono i muscoli delle gambe e del core notevolmente più
+          attivi rispetto allo stare seduti su una sedia. Gli autori
+          chiamano questo l'<em>"Inactivity Mismatch Hypothesis"</em>: il
+          nostro corpo si è evoluto adattandosi a posture di riposo
+          variamente attive — non a rimanere immobili per ore nella stessa,
+          identica posizione seduta.
+        </p>
+      </details>
+    </div>
+
+    <div class="research-item">
+      <h3>Oltre 100 posizioni sedute nel mondo</h3>
+      <p class="research-teaser">
+        Anche l'antropologia culturale mostra che la sedia è solo una delle
+        tante soluzioni possibili. L'antropologo Gordon W. Hewes ha
+        documentato più di 100 posture sedute e di riposo abituali distinte,
+        provenienti da culture di tutto il mondo, nel suo studio molto
+        citato sulla distribuzione mondiale delle posture di riposo.
+      </p>
+      <details class="research-more">
+        <summary><span class="more-label">continua a leggere…</span><span class="less-label">mostra meno</span></summary>
+        <p>
+          Dall'accovacciamento profondo diffuso tra molti gruppi etnici
+          africani e asiatici, a forme distinte di seduta inginocchiata come
+          tra gli Ainu in Giappone, fino alle abitudini di seduta di popoli
+          nordamericani come i Kaska in Canada. In confronto, la sedia da
+          ufficio come la conosciamo oggi è un'invenzione giovane e
+          relativamente unilaterale.
+        </p>
+      </details>
+    </div>
+
+    <div class="research-item">
+      <h3>Una prospettiva: niente paura della sedia</h3>
+      <p class="research-teaser">
+        Il biologo evoluzionista Daniel Lieberman (Harvard), che esamina nel
+        dettaglio proprio questa ricerca nel suo libro <em>"Exercised"</em>,
+        mette anche in guardia dall'esagerare: stare seduti è di per sé un
+        comportamento umano normale, sempre diffuso, e non è di per sé
+        dannoso.
+      </p>
+      <details class="research-more">
+        <summary><span class="more-label">continua a leggere…</span><span class="less-label">mostra meno</span></summary>
+        <p>
+          Diventa un problema soprattutto quando un'unica posizione viene
+          mantenuta per periodi molto lunghi senza interruzione.
+        </p>
+        <blockquote class="pull-quote">
+          Rilassatevi un po' riguardo allo stare seduti. Sì, è bene non
+          restare seduti tutto il giorno. È bene muoversi — ma non dovremmo
+          spaventare le persone per qualcosa di così naturale e normale
+          come lo stare seduti.
+          <cite>— parafrasato da Daniel Lieberman, "Exercised" (2021)</cite>
+        </blockquote>
+        <p>
+          Proprio questo equilibrio è l'idea alla base di PostureShift: non
+          prescrivere un'unica postura "corretta", ma alternare
+          regolarmente tra posizioni diversamente attive — al ritmo e con
+          le posizioni più adatte alla tua vita quotidiana.
+        </p>
+      </details>
+    </div>
+
+    <div class="source-list">
+      <p><strong>Fonti</strong></p>
+      <p>Katzmarzyk PT, Church TS, Craig CL, Bouchard C (2009): „Sitting Time and Mortality from All Causes, Cardiovascular Disease, and Cancer." Medicine &amp; Science in Sports &amp; Exercise 41(5). Pennington Biomedical Research Center, Auswertung der Canada Fitness Survey (n ≈ 17.000).</p>
+      <p>Raichlen DA, Pontzer H, et al. (2020): „Sitting, squatting, and the evolutionary biology of human inactivity." PNAS 117(13). <a href="https://www.pnas.org/doi/10.1073/pnas.1911868117" target="_blank" rel="noopener noreferrer">pnas.org/doi/10.1073/pnas.1911868117</a></p>
+      <p>Hewes GW (1955): „World Distribution of Certain Postural Habits." American Anthropologist 57(2).</p>
+      <p>Lieberman DE (2021): „Exercised: The Science of Physical Activity, Rest and Health." Pantheon Books.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="loesung">
+  <div class="section-inner section-inner-wide">
+    <p class="eyebrow">La soluzione</p>
+    <h2>Cambio regolare — nella forma che funziona per te</h2>
+    <p class="lead">
+      L'idea di fondo non è una postura particolare, ma il cambio
+      cronometrato tra più posture. PostureShift ti offre un database di
+      posture liberamente ampliabile e ti permette di costruire la tua
+      rotazione personale — adattata alla tua postazione di lavoro reale.
+    </p>
+
+    <div class="posture-grid">
+      <div class="posture-card posture-card-highlight">
+        <span class="posture-badge">Particolarmente efficace</span>
+        <h3>A terra</h3>
+        <p>Seduta a gambe incrociate, in ginocchio ("seiza") e altre posizioni a terra attivano al massimo i muscoli delle gambe e del core — la postura che ottiene i risultati migliori nella ricerca.</p>
+      </div>
+      <div class="posture-card">
+        <h3>Sedia</h3>
+        <p>La classica posizione seduta resta parte della rotazione — ciò che conta è che non sia l'unica posizione per ore intere.</p>
+      </div>
+      <div class="posture-card">
+        <h3>Sgabelli alti e sedute attive</h3>
+        <p>Sgabelli a sella, sgabelli oscillanti e altre sedute attive mantengono attivi i muscoli del core anche da seduti.</p>
+      </div>
+      <div class="posture-card">
+        <h3>In piedi</h3>
+        <p>Alla scrivania regolabile in altezza o per una breve camminata nel frattempo — non serve una scrivania da lavoro in piedi.</p>
+      </div>
+    </div>
+
+    <p class="posture-note">
+      Sedersi a terra ottiene i risultati migliori nella ricerca — per
+      questo la mettiamo in evidenza. Ma non tutti possono o vogliono farlo
+      in ufficio: abbigliamento, spazio, colleghi o la situazione degli
+      arredi spesso pongono dei limiti. Per questo PostureShift funziona
+      altrettanto bene con una rotazione composta solo da sedia, sgabello
+      alto e posizione in piedi — il fattore decisivo è il cambio in sé, non
+      una posizione particolare.
+    </p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🗂️</div>
+        <h3>Database delle posture</h3>
+        <p>A terra, sedia, sgabello alto, seduta attiva, in piedi, auto — già precompilato e liberamente ampliabile con posture personalizzate.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⏱️</div>
+        <h3>Due livelli di timer</h3>
+        <p>Un timer di posizione per il cambio di postura e un timer per la camminata per una breve pausa nel frattempo — entrambi regolabili in modo indipendente.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔔</div>
+        <h3>Suono, voce, push</h3>
+        <p>Tre canali di notifica, ciascuno attivabile singolarmente — inclusi pulsanti d'azione direttamente nella notifica push.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🚗</div>
+        <h3>Ufficio e auto, separati</h3>
+        <p>Due rotazioni indipendenti, ciascuna con il proprio timer, le proprie impostazioni e il proprio questionario di configurazione iniziale.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📴</div>
+        <h3>Funziona offline</h3>
+        <p>PostureShift funziona interamente in locale sul tuo dispositivo — utilizzabile senza alcun account.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔄</div>
+        <h3>Sincronizzazione opzionale</h3>
+        <p>Con un account gratuito (accesso tramite magic link, senza password), la tua rotazione si sincronizza tra i dispositivi.</p>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <figure>
+        <img src="../screenshots/timer.png" alt="Timer di PostureShift con una rotazione attiva tra seduta a gambe incrociate, sgabello a sella e posizione in piedi neutra" loading="lazy" />
+        <figcaption>Timer di posizione con una rotazione in corso</figcaption>
+      </figure>
+      <figure>
+        <img src="../screenshots/datenbank.png" alt="Database delle posture, raggruppate per categorie a terra e sedia" loading="lazy" />
+        <figcaption>Database delle posture liberamente consultabile</figcaption>
+      </figure>
+      <figure>
+        <img src="../screenshots/einstellungen.png" alt="Impostazioni con intervallo di cambio posizione, intervallo di pausa camminata e canali di notifica" loading="lazy" />
+        <figcaption>Impostazioni per scheda, con pulsanti di prova</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- Bodensitzen-Vertiefung: eigene Unterseite (bodensitzen.html), hier nur
+     ein kompakter Teaser. Bewusst nur auf der Landingpage, nicht in der
+     App gespiegelt (die App bleibt Timer-fokussiert). -->
+<section class="section section-tint" id="bodensitzen">
+  <div class="section-inner section-inner-wide teaser-split">
+    <div class="teaser-copy">
+    <p class="eyebrow">Approfondimento</p>
+    <h2>Sedersi a terra nel dettaglio</h2>
+    <p class="lead">
+      Cosa distingue la seduta a terra dalle altre posizioni, quali muscoli
+      attiva, quanto tempo serve per abituarsi e cosa mostrano le culture
+      di tutto il mondo — con una fonte per ogni affermazione.
+    </p>
+    <p class="research-cta">
+      <a href="floor-sitting.html" class="btn btn-primary">Leggi l'approfondimento</a>
+    </p>
+    </div>
+    <div class="teaser-art">
+      <img
+        src="../images/pexels-shvetsa-5262465.jpg"
+        alt="Persona seduta rilassata a gambe incrociate sul pavimento"
+        style="object-position: 50% 30%;"
+        width="3951" height="5926"
+        loading="lazy"
+      />
+    </div>
+  </div>
+</section>
+
+<section class="section" id="armentlastung">
+  <div class="section-inner section-inner-wide teaser-split">
+    <div class="teaser-copy">
+    <p class="eyebrow">Approfondimento</p>
+    <h2>Alleviare il carico sulle braccia da seduti</h2>
+    <p class="lead">
+      Lasciare le braccia penzoloni senza appoggio mentre si è seduti
+      affatica collo e parte alta della schiena più di quanto si pensi —
+      cosa c'è dietro dal punto di vista meccanico e cosa aiuta davvero,
+      dall'altezza della scrivania ai braccioli fino agli esercizi, con una
+      fonte per ogni affermazione.
+    </p>
+    <p class="research-cta">
+      <a href="arm-relief.html" class="btn btn-primary">Leggi l'approfondimento</a>
+    </p>
+    </div>
+    <div class="teaser-art">
+      <img
+        src="../images/pexels-alphaen-31726674.jpg"
+        alt="Sedia da ufficio ergonomica con braccioli a una scrivania regolabile in altezza con monitor"
+        style="object-position: 55% 45%;"
+        width="3268" height="4895"
+        loading="lazy"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- Maßnahmen gegen Verspannungen: eigene Unterseite (verspannungen.html),
+     bislang nur auf Deutsch — hier nur ein kompakter Teaser. -->
+<section class="section" id="verspannungen">
+  <div class="section-inner section-inner-wide teaser-split">
+    <div class="teaser-copy">
+    <p class="eyebrow">Approfondimento</p>
+    <h2>Misure contro le tensioni muscolari</h2>
+    <p class="lead">
+      Dallo stretching e il calore agli strumenti manuali, dal trattamento
+      professionale all'ergonomia — una panoramica ampia su cosa mira a
+      ottenere ciascuna misura e sul perché un sollievo duraturo richiede
+      anche muscoli allenati.
+    </p>
+    <p class="research-cta">
+      <a href="muscle-tension.html" class="btn btn-primary">Leggi l'approfondimento</a>
+    </p>
+    </div>
+    <div class="teaser-art">
+      <img
+        src="../images/pexels-maksgelatin-6094022.jpg"
+        alt="Nastro di kinesiologia sulla parte alta della schiena di una persona a supporto dei muscoli tesi"
+        style="object-position: 50% 25%;"
+        width="4000" height="6000"
+        loading="lazy"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- Nur sichtbar nach Werbe-Cookie-Einwilligung (PSConsent) — entschieden in
+     js/site.js. Das AdSense-Skript wird erst dann von js/ads.js dynamisch
+     nachgeladen, nie vorab. -->
+<section class="section ad-section" id="adSlotWrapper">
+  <div class="section-inner">
+    <p class="ad-label">Pubblicità</p>
+    <div id="adSlotAdsense" class="ad-slot hidden">
+      <ins class="adsbygoogle"
+           style="display:block; text-align:center;"
+           data-ad-layout="in-article"
+           data-ad-format="fluid"
+           data-ad-client="ca-pub-8453553622026562"
+           data-ad-slot="REPLACE_WITH_ADSENSE_SLOT_ID"></ins>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <h2>Pronto a portare più movimento nella tua giornata?</h2>
+  <p>PostureShift è gratuito, funziona direttamente nel browser e può essere installato come app.</p>
+  <a href="https://app.postureshift.info/" class="btn btn-primary">Inizia gratis ora</a>
+</section>
+
+<section class="section section-tint">
+  <div class="section-inner support-section">
+    <p class="eyebrow">Supporto</p>
+    <h2>Ti piace PostureShift?</h2>
+    <p>
+      L'app è gratuita e lo rimarrà. Se vuoi comunque sostenere il suo
+      sviluppo, puoi farlo volontariamente — senza alcuna aspettativa in
+      cambio.
+    </p>
+    <div class="support-actions">
+      <a href="https://paypal.me/DanielSchwarz88" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+        <span aria-hidden="true">💛</span> Dona con PayPal
+      </a>
+      <a href="https://buymeacoffee.com/danielschwarz" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+        <span aria-hidden="true">☕</span> Offrimi un caffè
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Werbe-Cookie-Consent-Banner: nur sichtbar solange PSConsent.getStatus()
+     null ist. Über den Footer-Link "Cookie-Einstellungen" später erneut
+     aufrufbar. -->
+<div id="consentBanner" class="consent-banner hidden" role="region" aria-label="Impostazioni cookie">
+  <p>
+    Vorremmo mostrarti pubblicità tramite Google AdSense — questo richiede
+    l'impostazione di cookie pubblicitari. Se rifiuti, non verrà mostrata
+    alcuna pubblicità.
+  </p>
+  <div class="consent-actions">
+    <button id="consentDeclineBtn" type="button" class="btn btn-consent">Rifiuta</button>
+    <button id="consentAcceptBtn" type="button" class="btn btn-consent">Accetta i cookie pubblicitari</button>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="https://app.postureshift.info/">Vai all'app</a>
+      <a href="impressum.html">Note legali</a>
+      <a href="datenschutz.html">Informativa sulla privacy</a>
+      <a href="agb.html">Termini</a>
+      <button type="button" id="btn-cookie-settings" class="footer-link-btn">Impostazioni cookie</button>
+      <details class="lang-switch">
+      <summary>IT</summary>
+      <ul>
+        <li><a href="/">Deutsch</a></li>
+        <li><a href="/en/" aria-current="page">English</a></li>
+        <li><a href="/da/">Dansk</a></li>
+        <li><a href="/nl/">Nederlands</a></li>
+        <li><a href="/fr/">Français</a></li>
+        <li><a href="/pl/">Polski</a></li>
+        <li><a href="/cs/">Čeština</a></li>
+        <li><a href="/no/">Norsk</a></li>
+        <li><a href="/sv/">Svenska</a></li>
+      </ul>
+    </details>
+    </div>
+    <p class="footer-note">
+      La pubblicità viene mostrata solo dopo consenso esplicito tramite il
+      banner dei cookie. Per i dettagli, vedi l'informativa sulla privacy.
+    </p>
+  </div>
+  <p class="footer-copy">© 2026 Daniel Schwarz · PostureShift</p>
+</footer>
+
+<script src="../js/consent.js"></script>
+<script src="../js/ads.js"></script>
+<script src="../js/site.js"></script>
+</body>
+</html>

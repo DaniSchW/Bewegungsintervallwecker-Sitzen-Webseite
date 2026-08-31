@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PostureShift – Vähemmän selkäkipua säännöllisillä asennonvaihdoilla</title>
+<meta name="description" content="Suuri osa toimistotyön selkäkivusta ei johdu itse istumisesta, vaan liian pitkään samassa asennossa pysymisestä. PostureShift on ilmainen PWA-sovellus, joka ajastaa vaihdot istuma-, lattia- ja seisoma-asentojen välillä toimistolla ja autossa — mukana ilmainen asentotietokanta, ajastin ja muistutukset." />
+<meta property="og:title" content="PostureShift – Vähemmän selkäkipua säännöllisillä asennonvaihdoilla" />
+<meta property="og:description" content="Ajastettu vaihtelu istuma-, lattia- ja seisoma-asentojen välillä: ilmainen PWA-sovellus, jossa on ilmainen asentotietokanta, ajastin ja muistutukset liikkumisen lisäämiseksi yksipuolisen pitkäaikaisen istumisen vastapainoksi." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://postureshift.info/fi/" />
+<meta property="og:locale" content="fi_FI" />
+<meta name="theme-color" content="#2f6e5c" />
+<link rel="canonical" href="https://postureshift.info/fi/" />
+<link rel="alternate" hreflang="de" href="https://postureshift.info/" />
+<link rel="alternate" hreflang="en" href="https://postureshift.info/en/" />
+<link rel="alternate" hreflang="da" href="https://postureshift.info/da/" />
+<link rel="alternate" hreflang="nl" href="https://postureshift.info/nl/" />
+<link rel="alternate" hreflang="fr" href="https://postureshift.info/fr/" />
+<link rel="alternate" hreflang="pl" href="https://postureshift.info/pl/" />
+<link rel="alternate" hreflang="cs" href="https://postureshift.info/cs/" />
+<link rel="alternate" hreflang="no" href="https://postureshift.info/no/" />
+<link rel="alternate" hreflang="sv" href="https://postureshift.info/sv/" />
+<link rel="alternate" hreflang="x-default" href="https://postureshift.info/" />
+<link rel="icon" href="../icon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="../css/site.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://postureshift.info/#organization",
+      "name": "PostureShift",
+      "url": "https://postureshift.info/",
+      "logo": "https://postureshift.info/icon.svg"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://postureshift.info/fi/#website",
+      "url": "https://postureshift.info/fi/",
+      "name": "PostureShift",
+      "inLanguage": "fi",
+      "publisher": {
+        "@id": "https://postureshift.info/#organization"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="/fi/">
+    <img class="logo-mark" src="../icon.svg" alt="" aria-hidden="true" width="28" height="28" />
+    <span>PostureShift</span>
+  </a>
+  <nav class="site-nav" aria-label="Page navigation">
+    <details class="nav-menu">
+      <summary aria-label="Menü öffnen"><span class="nav-menu-bar"></span><span class="nav-menu-bar"></span><span class="nav-menu-bar"></span></summary>
+      <ul>
+        <li><a href="#hintergrund">Tausta</a></li>
+        <li><a href="#loesung">Ratkaisu</a></li>
+        <li><a href="floor-sitting.html">Lattialla istuminen</a></li>
+        <li><a href="muscle-tension.html">Lihasjännitys</a></li>
+        <li><a href="arm-relief.html">Käsivarsien kevennys</a></li>
+      </ul>
+    </details>
+    <a href="#hintergrund">Tausta</a>
+    <a href="#loesung">Ratkaisu</a>
+    <details class="nav-dropdown">
+      <summary>Syvennys</summary>
+      <ul>
+      <li><a href="floor-sitting.html">Lattialla istuminen</a></li>
+      <li><a href="muscle-tension.html">Lihasjännitys</a></li>
+      <li><a href="arm-relief.html">Käsivarsien kevennys</a></li>
+      </ul>
+    </details>
+    <details class="lang-switch">
+      <summary>FI</summary>
+      <ul>
+        <li><a href="/">Deutsch</a></li>
+        <li><a href="/en/" aria-current="page">English</a></li>
+        <li><a href="/da/">Dansk</a></li>
+        <li><a href="/nl/">Nederlands</a></li>
+        <li><a href="/fr/">Français</a></li>
+        <li><a href="/pl/">Polski</a></li>
+        <li><a href="/cs/">Čeština</a></li>
+        <li><a href="/no/">Norsk</a></li>
+        <li><a href="/sv/">Svenska</a></li>
+      </ul>
+    </details>
+    <a href="https://app.postureshift.info/" class="btn btn-primary">Käynnistä sovellus</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow eyebrow-warn">Selkäkipua toimistolla?</p>
+    <h1>Ehkä selkääsi ei särje istumisesta. Ehkä se särkee paikallaan pysymisestä.</h1>
+    <p class="hero-lede">
+      PostureShift ajastaa vaihdot eri istuma-, lattia- ja seisoma-asentojen
+      välillä toimistolla ja autossa — säädettävin väliajoin, vapaasti
+      laajennettavalla asentotietokannalla ja huomaavaisin muistutuksin.
+      Ratkaisu ei ole yksi tietty asento, vaan asennon säännöllinen
+      vaihtaminen.
+    </p>
+    <div class="hero-actions">
+      <a href="https://app.postureshift.info/" class="btn btn-primary">Aloita ilmaiseksi</a>
+      <a href="#hintergrund" class="btn btn-ghost">Miksi tämä auttaa</a>
+    </div>
+    <p class="hero-disclaimer">
+      PostureShift on liikkumis- ja muistutustyökalu, eikä se korvaa lääkärin
+      neuvoja, diagnoosia tai hoitoa. Jos sinulla on pitkäaikaisia vaivoja,
+      käänny asiantuntijan puoleen.
+    </p>
+  </div>
+  <div class="hero-art">
+    <img
+      src="../images/hero-ruecken.jpg"
+      alt="Nainen pitelee selkäänsä kivun vuoksi istuessaan toimistopöytänsä ääressä"
+      width="1920" height="1080"
+      fetchpriority="high"
+    />
+  </div>
+</section>
+
+<section class="section section-tint" id="hintergrund">
+  <div class="section-inner section-inner-wide">
+    <p class="eyebrow">Tausta</p>
+    <h2>Mitä tiedämme istumisesta, kivusta ja liikkumisesta</h2>
+    <p class="lead">
+      "Istuminen on uusi tupakointi" on noussut iskulauseeksi — ja sen takana
+      todella on tutkimusta. Mutta tarkempi katsaus keskeisiin lähteisiin
+      osoittaa myös: kyse ei ole istumisen kieltämisestä kokonaan, vaan siitä,
+      miten istumme ja kuinka usein vaihdamme asentoa.
+    </p>
+
+    <div class="research-item">
+      <h3>"Istuminen on uusi tupakointi"</h3>
+      <p class="research-teaser">
+        Lauseen keksi Mayo Clinicin tutkija tri James Levine. Tärkeä perusta
+        sille tuli Pennington Biomedical Research Centerin tutkimuksesta, joka
+        käytti tietoja yli 17 000 kanadalaisesta: se löysi yhteyden pitkän,
+        keskeytymättömän päivittäisen istumisajan ja kohonneen kuolleisuusriskin
+        välillä.
+      </p>
+      <details class="research-more">
+        <summary><span class="more-label">lue lisää…</span><span class="less-label">näytä vähemmän</span></summary>
+        <p>
+          Tämä yhteys piti paikkansa riippumatta siitä, kuinka fyysisesti
+          aktiivisia ihmiset muuten olivat vapaa-ajallaan. Säännöllisillä
+          tauoilla istumisesta näyttää siis olevan oma vaikutuksensa, jota
+          pelkkä vapaa-ajan liikunta ei kumoa.
+        </p>
+      </details>
+    </div>
+
+    <div class="research-item">
+      <h3>Mitä hadzat opettavat meille</h3>
+      <p class="research-teaser">
+        Laajalti siteerattu Raichlenin, Pontzerin ja kollegoiden tutkimus (PNAS,
+        2020) tarkasteli hadzoja, tansanialaista metsästäjä-keräilijäyhteisöä,
+        liikeantureiden avulla — ja tuotti yllättävän havainnon: hadzat
+        istuvat tai lepäävät kokonaisuudessaan lähes yhtä paljon kuin
+        teollistuneiden maiden ihmiset.
+      </p>
+      <details class="research-more">
+        <summary><span class="more-label">lue lisää…</span><span class="less-label">näytä vähemmän</span></summary>
+        <p>
+          Ero ei ole kestossa vaan asennossa. Lepoasennot, kuten syvä kyykky
+          tai polvillaan olo, pitävät jalka- ja keskivartalolihakset
+          huomattavasti aktiivisempina kuin tuolilla istuminen. Tutkijat
+          kutsuvat tätä <em>"epäaktiivisuuden ristiriitahypoteesiksi"</em>
+          (Inactivity Mismatch Hypothesis): kehomme ovat evolutiivisesti
+          sopeutuneet vaihtelevan aktiivisiin lepoasentoihin — ei liikkumatta
+          istumiseen tunteja samassa asennossa.
+        </p>
+      </details>
+    </div>
+
+    <div class="research-item">
+      <h3>Yli 100 istuma-asentoa ympäri maailmaa</h3>
+      <p class="research-teaser">
+        Myös kulttuuriantropologia osoittaa, että tuoli on vain yksi
+        ratkaisu monien joukossa. Antropologi Gordon W. Hewes dokumentoi
+        laajalti siteeratussa maailmanlaajuisia lepoasentoja käsittelevässä
+        tutkimuksessaan yli 100 erilaista vakiintunutta istuma- ja lepoasentoa
+        eri puolilta maailmaa.
+      </p>
+      <details class="research-more">
+        <summary><span class="more-label">lue lisää…</span><span class="less-label">näytä vähemmän</span></summary>
+        <p>
+          Syvästä kyykystä, joka on yleinen monilla afrikkalaisilla ja
+          aasialaisilla kansoilla, aina omalaatuisiin polviltaan-istuma-
+          muotoihin, kuten Japanin ainuilla, tai Pohjois-Amerikan kansojen,
+          kuten Kanadan kaskojen, istumatapoihin. Nykyaikainen toimistotuoli
+          on vertailun vuoksi nuori ja suhteellisen yksipuolinen keksintö.
+        </p>
+      </details>
+    </div>
+
+    <div class="research-item">
+      <h3>Hieman perspektiiviä: tuolia ei tarvitse pelätä</h3>
+      <p class="research-teaser">
+        Evoluutiobiologi Daniel Lieberman (Harvard), joka tarkastelee juuri
+        tätä tutkimusta yksityiskohtaisesti kirjassaan <em>"Exercised"</em>,
+        varoittaa myös liioittelusta: itse istuminen on normaalia
+        ihmiskäyttäytymistä, joka on aina ollut yleistä, eikä se sinänsä ole
+        haitallista.
+      </p>
+      <details class="research-more">
+        <summary><span class="more-label">lue lisää…</span><span class="less-label">näytä vähemmän</span></summary>
+        <p>
+          Ongelmaksi se muodostuu lähinnä silloin, kun yhtä asentoa pidetään
+          hyvin pitkiä aikoja keskeytyksettä.
+        </p>
+        <blockquote class="pull-quote">
+          Rentoudu vähän istumisen suhteen. Kyllä, on hyvä olla istumatta koko
+          päivää. On hyvä liikkua — mutta meidän ei pidä pelotella ihmisiä
+          jollain niin luonnollisella ja normaalilla kuin istuminen.
+          <cite>— vapaasti mukaillen Daniel Liebermania, "Exercised" (2021)</cite>
+        </blockquote>
+        <p>
+          Juuri tämä tasapaino on PostureShiftin ydinajatus: ei saneleta yhtä
+          ainoaa "oikeaa" asentoa, vaan vaihdellaan säännöllisesti eri
+          tavoin aktiivisten asentojen välillä — omaan tahtiin ja omaan
+          arkeen sopivilla asennoilla.
+        </p>
+      </details>
+    </div>
+
+    <div class="source-list">
+      <p><strong>Sources</strong></p>
+      <p>Katzmarzyk PT, Church TS, Craig CL, Bouchard C (2009): „Sitting Time and Mortality from All Causes, Cardiovascular Disease, and Cancer." Medicine &amp; Science in Sports &amp; Exercise 41(5). Pennington Biomedical Research Center, Auswertung der Canada Fitness Survey (n ≈ 17.000).</p>
+      <p>Raichlen DA, Pontzer H, et al. (2020): „Sitting, squatting, and the evolutionary biology of human inactivity." PNAS 117(13). <a href="https://www.pnas.org/doi/10.1073/pnas.1911868117" target="_blank" rel="noopener noreferrer">pnas.org/doi/10.1073/pnas.1911868117</a></p>
+      <p>Hewes GW (1955): „World Distribution of Certain Postural Habits." American Anthropologist 57(2).</p>
+      <p>Lieberman DE (2021): „Exercised: The Science of Physical Activity, Rest and Health." Pantheon Books.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="loesung">
+  <div class="section-inner section-inner-wide">
+    <p class="eyebrow">Ratkaisu</p>
+    <h2>Säännöllinen vaihtelu — omaan tahtiisi sopivalla tavalla</h2>
+    <p class="lead">
+      Ydinajatus ei ole yksi tietty asento, vaan ajastettu vaihtelu
+      useamman välillä. PostureShift antaa käyttöösi vapaasti laajennettavan
+      asentotietokannan ja antaa sinun koota siitä oman kiertosi — omaan
+      toimistoympäristöösi sopivaksi.
+    </p>
+
+    <div class="posture-grid">
+      <div class="posture-card posture-card-highlight">
+        <span class="posture-badge">Erityisen tehokas</span>
+        <h3>Lattia</h3>
+        <p>Turkkilainen istuma-asento, polviltaan istuminen ("seiza") ja muut lattia-asennot aktivoivat jalka- ja keskivartalolihakset eniten — asento, joka pärjää parhaiten tutkimuksissa.</p>
+      </div>
+      <div class="posture-card">
+        <h3>Tuoli</h3>
+        <p>Tavallinen istuminen pysyy osana kiertoa — tärkeintä on, ettei se ole ainoa asento tuntikausiin.</p>
+      </div>
+      <div class="posture-card">
+        <h3>Baarijakkarat ja aktiivinen istuminen</h3>
+        <p>Satulajakkarat, tasapainojakkarat ja muu aktiivinen istuminen pitävät keskivartalon lihakset toiminnassa myös istuessa.</p>
+      </div>
+      <div class="posture-card">
+        <h3>Seisominen</h3>
+        <p>Seisomapöydän ääressä tai lyhyellä kävelyllä välissä — seisomapöytää ei tarvita.</p>
+      </div>
+    </div>
+
+    <p class="posture-note">
+      Lattialla istuminen pärjää parhaiten tutkimuksissa — siksi nostamme sen
+      esiin. Mutta kaikki eivät voi tai halua tehdä sitä toimistolla:
+      vaatetus, tilan puute, kollegat tai kalusteet asettavat usein rajoja.
+      Siksi PostureShift toimii yhtä hyvin myös kierrolla, joka koostuu
+      pelkästään tuolista, baarijakkarasta ja seisomisesta — ratkaisevaa on
+      itse vaihtelu, ei mikään tietty yksittäinen asento.
+    </p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🗂️</div>
+        <h3>Asentotietokanta</h3>
+        <p>Lattia, tuoli, baarijakkara, aktiivinen istuminen, seisominen, auto — valmiiksi täytetty ja vapaasti laajennettavissa omilla asennoillasi.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⏱️</div>
+        <h3>Kaksi ajastintasoa</h3>
+        <p>Asentoajastin asennon vaihtamiseen ja kävelyajastin lyhyeen taukoon välissä — molemmat säädettävissä erikseen.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔔</div>
+        <h3>Ääni, puhe, push-ilmoitukset</h3>
+        <p>Kolme ilmoituskanavaa, joista jokainen voidaan kytkeä päälle tai pois erikseen — mukaan lukien toimintopainikkeet suoraan push-ilmoituksessa.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🚗</div>
+        <h3>Toimisto ja auto erikseen</h3>
+        <p>Kaksi itsenäistä kiertoa, kummallakin oma ajastin, omat asetukset ja oma käyttöönottokysely.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📴</div>
+        <h3>Toimii offline-tilassa</h3>
+        <p>PostureShift toimii kokonaan paikallisesti laitteellasi — käytettävissä ilman minkäänlaista tiliä.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔄</div>
+        <h3>Valinnainen synkronointi</h3>
+        <p>Ilmaisella tilillä (kirjautuminen taikalinkillä, ei salasanaa) kiertosi synkronoituu laitteiden välillä.</p>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <figure>
+        <img src="../screenshots/timer.png" alt="PostureShiftin ajastin, jossa käynnissä oleva kierto turkkilaisesta istumisesta, satulajakkarasta ja neutraalista seisomisesta" loading="lazy" />
+        <figcaption>Asentoajastin käynnissä olevalla kierrolla</figcaption>
+      </figure>
+      <figure>
+        <img src="../screenshots/datenbank.png" alt="Asentotietokanta, ryhmiteltynä kategorioihin lattia ja tuoli" loading="lazy" />
+        <figcaption>Vapaasti selattava asentotietokanta</figcaption>
+      </figure>
+      <figure>
+        <img src="../screenshots/einstellungen.png" alt="Asetukset asennonvaihtovälillä, kävelytaukovälillä ja ilmoituskanavilla" loading="lazy" />
+        <figcaption>Asetukset välilehdittäin, testauspainikkeineen</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- Bodensitzen-Vertiefung: eigene Unterseite (bodensitzen.html), hier nur
+     ein kompakter Teaser. Bewusst nur auf der Landingpage, nicht in der
+     App gespiegelt (die App bleibt Timer-fokussiert). -->
+<section class="section section-tint" id="bodensitzen">
+  <div class="section-inner section-inner-wide teaser-split">
+    <div class="teaser-copy">
+    <p class="eyebrow">Syvennys</p>
+    <h2>Lattialla istuminen yksityiskohtaisesti</h2>
+    <p class="lead">
+      Mikä erottaa lattialla istumisen muista asennoista, mitä lihaksia se
+      aktivoi, kuinka kauan siihen tottuminen kestää ja mitä kulttuurit ympäri
+      maailmaa siitä kertovat — lähde jokaiselle väitteelle.
+    </p>
+    <p class="research-cta">
+      <a href="floor-sitting.html" class="btn btn-primary">Lue syvennys</a>
+    </p>
+    </div>
+    <div class="teaser-art">
+      <img
+        src="../images/pexels-shvetsa-5262465.jpg"
+        alt="Henkilö istuu rennosti jalat ristissä lattialla"
+        style="object-position: 50% 30%;"
+        width="3951" height="5926"
+        loading="lazy"
+      />
+    </div>
+  </div>
+</section>
+
+<section class="section" id="armentlastung">
+  <div class="section-inner section-inner-wide teaser-split">
+    <div class="teaser-copy">
+    <p class="eyebrow">Syvennys</p>
+    <h2>Käsivarsien kuormituksen keventäminen istuessa</h2>
+    <p class="lead">
+      Käsivarsien roikottaminen tuettomana istuessa kuormittaa niskaa ja
+      yläselkää enemmän kuin luulisi — mikä tämän mekaanisesti aiheuttaa ja
+      mikä oikeasti auttaa, pöydän korkeudesta käsinojiin ja liikkeisiin,
+      lähde jokaiselle väitteelle.
+    </p>
+    <p class="research-cta">
+      <a href="arm-relief.html" class="btn btn-primary">Lue syvennys</a>
+    </p>
+    </div>
+    <div class="teaser-art">
+      <img
+        src="../images/pexels-alphaen-31726674.jpg"
+        alt="Ergonominen toimistotuoli, jossa käsinojat, korkeussäädettävän pöydän ääressä näyttöineen"
+        style="object-position: 55% 45%;"
+        width="3268" height="4895"
+        loading="lazy"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- Maßnahmen gegen Verspannungen: eigene Unterseite (verspannungen.html),
+     bislang nur auf Deutsch — hier nur ein kompakter Teaser. -->
+<section class="section" id="verspannungen">
+  <div class="section-inner section-inner-wide teaser-split">
+    <div class="teaser-copy">
+    <p class="eyebrow">Syvennys</p>
+    <h2>Toimenpiteitä lihasjännitystä vastaan</h2>
+    <p class="lead">
+      Venyttelystä ja lämmöstä käsivaraisiin apuvälineisiin, ammattilaisen
+      hoitoon ja ergonomiaan — laaja yleiskatsaus siitä, mihin kukin
+      toimenpide tähtää ja miksi pysyvä helpotus vaatii myös harjoitettuja
+      lihaksia.
+    </p>
+    <p class="research-cta">
+      <a href="muscle-tension.html" class="btn btn-primary">Lue syvennys</a>
+    </p>
+    </div>
+    <div class="teaser-art">
+      <img
+        src="../images/pexels-maksgelatin-6094022.jpg"
+        alt="Kinesioteippi henkilön yläselässä tukemassa jännittyneitä lihaksia"
+        style="object-position: 50% 25%;"
+        width="4000" height="6000"
+        loading="lazy"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- Nur sichtbar nach Werbe-Cookie-Einwilligung (PSConsent) — entschieden in
+     js/site.js. Das AdSense-Skript wird erst dann von js/ads.js dynamisch
+     nachgeladen, nie vorab. -->
+<section class="section ad-section" id="adSlotWrapper">
+  <div class="section-inner">
+    <p class="ad-label">Mainos</p>
+    <div id="adSlotAdsense" class="ad-slot hidden">
+      <ins class="adsbygoogle"
+           style="display:block; text-align:center;"
+           data-ad-layout="in-article"
+           data-ad-format="fluid"
+           data-ad-client="ca-pub-8453553622026562"
+           data-ad-slot="REPLACE_WITH_ADSENSE_SLOT_ID"></ins>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <h2>Valmis lisäämään liikettä päivääsi?</h2>
+  <p>PostureShift on ilmainen, toimii suoraan selaimessasi ja voidaan asentaa sovelluksena.</p>
+  <a href="https://app.postureshift.info/" class="btn btn-primary">Aloita ilmaiseksi</a>
+</section>
+
+<section class="section section-tint">
+  <div class="section-inner support-section">
+    <p class="eyebrow">Tue meitä</p>
+    <h2>Pidätkö PostureShiftistä?</h2>
+    <p>
+      Sovellus on ilmainen ja pysyy sellaisena. Jos haluat silti tukea sen
+      kehitystä, voit tehdä sen vapaaehtoisesti — mitään vastalahjaa
+      odottamatta.
+    </p>
+    <div class="support-actions">
+      <a href="https://paypal.me/DanielSchwarz88" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+        <span aria-hidden="true">💛</span> Lahjoita PayPalilla
+      </a>
+      <a href="https://buymeacoffee.com/danielschwarz" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+        <span aria-hidden="true">☕</span> Tarjoa kahvit
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Werbe-Cookie-Consent-Banner: nur sichtbar solange PSConsent.getStatus()
+     null ist. Über den Footer-Link "Cookie-Einstellungen" später erneut
+     aufrufbar. -->
+<div id="consentBanner" class="consent-banner hidden" role="region" aria-label="Cookie settings">
+  <p>
+    Haluaisimme näyttää sinulle mainontaa Google AdSensen kautta — tämä
+    edellyttää mainontaevästeiden asettamista. Jos kieltäydyt, mainontaa ei
+    näytetä.
+  </p>
+  <div class="consent-actions">
+    <button id="consentDeclineBtn" type="button" class="btn btn-consent">Hylkää</button>
+    <button id="consentAcceptBtn" type="button" class="btn btn-consent">Hyväksy mainontaevästeet</button>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="https://app.postureshift.info/">Siirry sovellukseen</a>
+      <a href="impressum.html">Tietoa julkaisijasta</a>
+      <a href="datenschutz.html">Tietosuojaseloste</a>
+      <a href="agb.html">Käyttöehdot</a>
+      <button type="button" id="btn-cookie-settings" class="footer-link-btn">Evästeasetukset</button>
+      <details class="lang-switch">
+      <summary>FI</summary>
+      <ul>
+        <li><a href="/">Deutsch</a></li>
+        <li><a href="/en/" aria-current="page">English</a></li>
+        <li><a href="/da/">Dansk</a></li>
+        <li><a href="/nl/">Nederlands</a></li>
+        <li><a href="/fr/">Français</a></li>
+        <li><a href="/pl/">Polski</a></li>
+        <li><a href="/cs/">Čeština</a></li>
+        <li><a href="/no/">Norsk</a></li>
+        <li><a href="/sv/">Svenska</a></li>
+      </ul>
+    </details>
+    </div>
+    <p class="footer-note">
+      Mainontaa näytetään vain nimenomaisen suostumuksen jälkeen
+      evästebannerin kautta. Katso tarkemmat tiedot tietosuojaselosteesta.
+    </p>
+  </div>
+  <p class="footer-copy">© 2026 Daniel Schwarz · PostureShift</p>
+</footer>
+
+<script src="../js/consent.js"></script>
+<script src="../js/ads.js"></script>
+<script src="../js/site.js"></script>
+</body>
+</html>

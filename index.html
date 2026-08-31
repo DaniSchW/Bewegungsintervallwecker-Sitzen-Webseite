@@ -3,6 +3,35 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<script>
+// Leitet Erstbesucher anhand der Browsersprache auf ihre Sprachversion um.
+// Läuft nur hier auf der deutschen Startseite (nicht auf Unterseiten), und
+// nur einmal: Sobald irgendeine Sprachwahl beobachtet wurde (automatisch
+// oder weil der Sprachumschalter genutzt wurde), merkt sich das der
+// localStorage-Eintrag dauerhaft, damit ein einmal gewähltes "trotzdem
+// Deutsch" nicht bei jedem Besuch erneut überschrieben wird.
+(function () {
+  try {
+    if (localStorage.getItem('ps_lang_choice')) return;
+    var supported = ['en', 'da', 'nl', 'fr', 'pl', 'cs', 'no', 'sv', 'es', 'it', 'pt', 'fi'];
+    var prefs = navigator.languages && navigator.languages.length
+      ? navigator.languages
+      : [navigator.language || navigator.userLanguage || 'de'];
+    for (var i = 0; i < prefs.length; i++) {
+      var code = String(prefs[i] || '').slice(0, 2).toLowerCase();
+      if (code === 'de') break;
+      if (supported.indexOf(code) !== -1) {
+        localStorage.setItem('ps_lang_choice', code);
+        location.replace('/' + code + '/');
+        return;
+      }
+    }
+    localStorage.setItem('ps_lang_choice', 'de');
+  } catch (e) {
+    /* localStorage nicht verfügbar (z. B. privates Surfen) — keine Umleitung */
+  }
+})();
+</script>
 <title>PostureShift – Weniger Rückenschmerzen durch regelmäßigen Positionswechsel</title>
 <meta name="description" content="Viele Rückenschmerzen im Büro hängen weniger mit dem Sitzen selbst zusammen als mit langem Stillhalten in derselben Position. PostureShift ist eine kostenlose PWA für getakteten Wechsel zwischen Sitz-, Boden- und Stehpositionen im Büro und im Auto — mit freier Haltungs-Datenbank, Timer und Erinnerungen." />
 <meta property="og:title" content="PostureShift – Weniger Rückenschmerzen durch regelmäßigen Positionswechsel" />
